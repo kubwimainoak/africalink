@@ -1,0 +1,92 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+## Project Overview
+
+*   **Type:** Informational Website
+*   **Description:** A static, branded website for Africa Link that showcases maritime and logistics support services to clients in the shipping and offshore industries. The site emphasizes clear, navigable information with high-quality visuals, following established branding guidelines with a color scheme of orange and black.
+*   **Primary Goal:** To provide an elegant informational resource that highlights Africa Link’s expertise in Fuel Supply (Bunkering), Shipping Support, Transit Services, Crew Management, and Personnel Provision without interactive features.
+
+## Project Structure
+
+### Framework-Specific Routing
+
+*   **Directory Rules:**
+
+    *   **Static HTML/CSS/JS:** The project will use a simple file-based routing structure where each page is a standalone HTML file.
+    *   Example: For the homepage, use `index.html`; for additional sections, use `about.html`, `services.html`, `contact.html`.
+
+### Core Directories
+
+*   **Versioned Structure:**
+
+    *   **pages:** Contains all HTML files such as `index.html`, `about.html`, `services.html`, and `404.html` for error handling.
+    *   **assets/css:** Contains all CSS files, including the Bootstrap library and custom styles for branding.
+    *   **assets/js:** Contains JavaScript files for light interactivity and enhancements.
+    *   **assets/images:** Stores high-quality images and maritime-themed icons.
+
+### Key Files
+
+*   **Stack-Versioned Patterns:**
+
+    *   `index.html`: Homepage featuring header with logo, tagline, and clear navigation.
+    *   `about.html`: Page detailing Africa Link's background and mission.
+    *   `services.html`: Dedicated page that explains each service in detail.
+    *   `404.html`: Custom error page that aligns with the branding guidelines.
+
+## Tech Stack Rules
+
+*   **Version Enforcement:**
+
+    *   **HTML5/CSS3/JavaScript:** All pages must be built using HTML5, CSS3, and vanilla JavaScript with no reliance on backend frameworks.
+    *   **Bootstrap (Latest Stable Version):** Use Bootstrap classes for responsive design; ensure that custom styles do not conflict with the framework defaults.
+
+## PRD Compliance
+
+*   **Non-Negotiable:**
+
+    *   "No interactive features like booking or quote requests are needed initially." This mandates a focus on clear, static informational content and a mobile-friendly layout.
+
+## App Flow Integration
+
+*   **Stack-Aligned Flow:**
+
+    *   **Homepage Flow:** Begins with a header featuring the Africa Link logo and tagline, followed by navigational links and sections highlighting the core services. The design uses distinct sections to smoothly transition between featured content and detailed descriptions.
+
+## Best Practices
+
+*   **HTML**
+
+    *   Use semantic elements (e.g., , , , ) to improve accessibility and SEO.
+    *   Ensure all images include alt text for accessibility.
+    *   Validate HTML against W3C standards.
+
+*   **CSS**
+
+    *   Leverage Bootstrap for responsive layouts and grid systems.
+    *   Create custom CSS files for branding overrides, keeping them separate from framework files.
+    *   Use CSS variables for brand colors to maintain consistency.
+
+*   **JavaScript**
+
+    *   Use vanilla JavaScript for small enhancements and interactivity.
+    *   Minimize DOM manipulation for optimal performance.
+    *   Keep scripts modular and ensure they load asynchronously where appropriate.
+
+*   **Bootstrap**
+
+    *   Utilize container classes to ensure responsive design across devices.
+    *   Follow Bootstrap’s grid system rigorously to maintain a fluid layout.
+    *   Overwrite default styles only when necessary to adhere to branding guidelines.
+
+## Rules
+
+*   Derive folder/file patterns **directly** from the static tech stack (HTML/CSS/JS with Bootstrap).
+*   Each HTML page must be clearly differentiated and not combined with server-side templating.
+*   Maintain separate directories for assets to ensure easy maintainability and scalability.
+*   Adhere strictly to branding guidelines—do not mix any conflicting color schemes or design elements.
+*   Ensure performance best practices by optimizing images, using minified assets, and enforcing a mobile-friendly design.

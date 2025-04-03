@@ -1,0 +1,1464 @@
+/**
+ * Africa Link Website - Translation Functionality
+ * This file handles the language switching functionality and translations
+ */
+
+// Stores all translations for the website
+const translations = {
+    // English translations (default)
+    en: {
+        // Navigation
+        "nav_home": "Home",
+        "nav_about": "About Us",
+        "nav_services": "Services",
+        "nav_contact": "Contact",
+        
+        // Services
+        "service_fuel": "Fuel Supply",
+        "service_shipping": "Shipping Support",
+        "service_transit": "Transit Services",
+        "service_crew": "Crew Management",
+        "service_personnel": "Personnel Provision",
+        
+        // Service Descriptions for Homepage Cards
+        "service_fuel_desc": "Professional bunkering services ensuring your vessels have the fuel they need when they need it.",
+        "service_shipping_desc": "Full-service shipping support including port services, tugboats, floating accommodations, and marine inspection tools.",
+        "service_transit_desc": "Streamline your customs clearance and transit logistics with our specialized expertise.",
+        "service_crew_desc": "Comprehensive crew management services including visas, transportation, accommodations, and port/airport assistance.",
+        "service_personnel_desc": "Access to qualified captains and crew members to ensure your maritime operations run smoothly.",
+        
+        // Hero Section
+        "hero_title": "AfricaLink Maritime & Logistics Solutions",
+        "hero_subtitle": "Your trusted partner for comprehensive maritime and logistics support across Africa",
+        "hero_cta": "Explore Our Services",
+        
+        // Services Section
+        "services_title": "Our Maritime Support Services",
+        "learn_more": "Learn More",
+        
+        // About Section
+        "about_title": "About Africa Link",
+        "about_p1": "Africa Link is a trusted provider of maritime and logistics support services across Africa. With years of experience in the industry, we offer comprehensive solutions tailored to meet the unique needs of our clients.",
+        "about_p2": "Our team of experts is dedicated to ensuring that your maritime operations run smoothly, efficiently, and safely, allowing you to focus on your core business activities.",
+        
+        // Contact Section
+        "contact_title": "Contact Us",
+        "contact_address": "Address:",
+        "contact_phone": "Phone:",
+        "contact_email": "Email:",
+        "contact_us_btn": "Contact Us",
+        
+        // Footer
+        "footer_tagline": "Your trusted partner for maritime and logistics support services across Africa.",
+        "footer_quick_links": "Quick Links",
+        "footer_services": "Our Services",
+        "footer_copyright": "© 2025 Africa Link. All rights reserved.",
+        
+        // Fuel Supply Page
+        "fuel_service_title": "Fuel Supply Services",
+        "fuel_service_subtitle": "Professional bunkering services ensuring your vessels have the fuel they need when they need it",
+        "fuel_overview_title": "Our Bunkering Services",
+        "fuel_overview_p1": "At Africa Link, we understand that reliable fuel supply is critical to your maritime operations. Our comprehensive bunkering services ensure that your vessels receive high-quality fuel when and where they need it, minimizing downtime and maximizing operational efficiency.",
+        "fuel_overview_p2": "With our extensive network of suppliers and logistics partners across Africa, we can provide bunkering services at key ports and offshore locations, ensuring that your fuel needs are met regardless of your vessel's location.",
+        "key_features": "Key Features",
+        "quality_fuel": "Quality Fuel Supply",
+        "quality_fuel_desc": "We source high-quality marine fuels that meet international standards and comply with sulfur emission regulations.",
+        "strategic_locations": "Strategic Locations",
+        "strategic_locations_desc": "We offer bunkering services at key ports and offshore locations across Africa.",
+        "timely_delivery": "Timely Delivery",
+        "timely_delivery_desc": "We understand the importance of punctuality in maritime operations and ensure timely fuel delivery.",
+        "quality_assurance": "Quality Assurance",
+        "quality_assurance_desc": "Our fuel undergoes rigorous quality control to ensure it meets your specifications and industry standards.",
+        "fuel_types_title": "Fuel Types We Provide",
+        "fuel_type_mgo": "<strong>Marine Gas Oil (MGO)</strong> - Low sulfur distillate fuel",
+        "fuel_type_mdo": "<strong>Marine Diesel Oil (MDO)</strong> - A blend of distillate and heavy fuel oils",
+        "fuel_type_vlsfo": "<strong>Very Low Sulfur Fuel Oil (VLSFO)</strong> - Compliant with IMO 2020 regulations",
+        "fuel_type_hfo": "<strong>Heavy Fuel Oil (HFO)</strong> - For vessels with scrubber systems",
+        "fuel_type_lng": "<strong>Liquefied Natural Gas (LNG)</strong> - Clean alternative fuel option",
+        "bunkering_process_title": "Our Bunkering Process",
+        "bunkering_step1": "<strong>Request and Planning</strong> - We receive your fuel requirements and create a detailed delivery plan.",
+        "bunkering_step2": "<strong>Logistics Coordination</strong> - Our team coordinates with suppliers and port authorities to ensure smooth operations.",
+        "bunkering_step3": "<strong>Quality Control</strong> - We inspect fuel quality before delivery to ensure it meets specifications.",
+        "bunkering_step4": "<strong>Delivery</strong> - Fuel is delivered to your vessel at the agreed time and location.",
+        "bunkering_step5": "<strong>Documentation</strong> - We provide all necessary documentation for your records.",
+        "need_bunkering": "Need Bunkering Services?",
+        "contact_fuel_desc": "Contact us to discuss your vessel's fuel requirements and how we can support your operations.",
+        
+        // Personnel Provision Page
+        "personnel_title": "Personnel Provision Services",
+        "personnel_subtitle": "Access to qualified captains and crew members to ensure your maritime operations run smoothly",
+        "personnel_service_title": "Our Personnel Provision Services",
+        "personnel_service_p1": "At Africa Link, we understand that the success of your maritime operations depends on having the right personnel at the helm. Our Personnel Provision services connect you with highly qualified captains, officers, and crew members who bring expertise, experience, and professionalism to your vessels.",
+        "personnel_service_p2": "Whether you need to fill temporary vacancies, assemble a complete crew, or find specialized maritime professionals, our extensive network of vetted maritime personnel ensures you have access to the talent you need, when you need it.",
+        "personnel_categories_title": "Maritime Personnel We Provide",
+        
+        "personnel_officers": "Officers",
+        "personnel_officers_desc": "We provide access to experienced and certified officers for your vessel:",
+        "personnel_officers_1": "Captains/Masters with extensive command experience",
+        "personnel_officers_2": "Chief Officers/First Mates",
+        "personnel_officers_3": "Second and Third Officers",
+        "personnel_officers_4": "Chief Engineers with comprehensive technical knowledge",
+        "personnel_officers_5": "First, Second, and Third Engineers",
+        "personnel_officers_6": "Electrical Officers and Technical Officers",
+        
+        "personnel_deck": "Deck Crew",
+        "personnel_deck_desc": "Our deck crew members are skilled and trained to handle various vessel operations:",
+        "personnel_deck_1": "Bosuns with leadership and operational experience",
+        "personnel_deck_2": "Able Seamen (AB) qualified in seamanship duties",
+        "personnel_deck_3": "Ordinary Seamen (OS) for general deck support",
+        "personnel_deck_4": "Deckhands experienced in various vessel types",
+        "personnel_deck_5": "Riggers specialized in offshore operations",
+        "personnel_deck_6": "Crane Operators for specialized cargo handling",
+        
+        "personnel_engine": "Engine Crew",
+        "personnel_engine_desc": "Our engine department personnel ensure the efficient operation of your vessel's propulsion systems:",
+        "personnel_engine_1": "Motormen with mechanical expertise",
+        "personnel_engine_2": "Oilers skilled in machinery maintenance",
+        "personnel_engine_3": "Fitters trained in repair and fabrication",
+        "personnel_engine_4": "Electricians for electrical system maintenance",
+        "personnel_engine_5": "Engine Room Attendants for general support",
+        "personnel_engine_6": "Refrigeration Engineers for specialized systems",
+        
+        "personnel_hospitality": "Hospitality Staff",
+        "personnel_hospitality_desc": "We provide quality hospitality staff to ensure comfort aboard your vessels:",
+        "personnel_hospitality_1": "Chief Cooks experienced in maritime galleys",
+        "personnel_hospitality_2": "Second Cooks and Assistant Cooks",
+        "personnel_hospitality_3": "Stewards for cabin and common area service",
+        "personnel_hospitality_4": "Messmen for dining service and support",
+        "personnel_hospitality_5": "Laundry Personnel for maintenance of linens and uniforms",
+        "personnel_hospitality_6": "Medical Personnel for health and safety support",
+        
+        "personnel_specialized": "Specialized Personnel",
+        "personnel_specialized_desc": "We also provide specialized maritime personnel for specific operations:",
+        "personnel_specialized_1": "Dynamic Positioning Officers (DPOs) for specialized vessels",
+        "personnel_specialized_2": "ROV (Remotely Operated Vehicle) Technicians",
+        "personnel_specialized_3": "Offshore Installation Managers",
+        "personnel_specialized_4": "HSE (Health, Safety, Environment) Officers",
+        "personnel_specialized_5": "Maritime Security Personnel",
+        "personnel_specialized_6": "Surveyors for specialized inspection services",
+        
+        "personnel_benefits_title": "Benefits of Our Personnel Provision Services",
+        "personnel_benefit_qualified": "Qualified Personnel",
+        "personnel_benefit_qualified_desc": "All personnel undergo rigorous screening, including verification of certifications, experience, and references to ensure they meet international maritime standards.",
+        "personnel_benefit_response": "Quick Response",
+        "personnel_benefit_response_desc": "Our extensive network allows us to respond rapidly to your personnel needs, even on short notice or in emergency situations.",
+        "personnel_benefit_knowledge": "Local Knowledge",
+        "personnel_benefit_knowledge_desc": "Many of our personnel have specific experience working in African waters and ports, bringing valuable local knowledge to your operations.",
+        "personnel_benefit_flexibility": "Flexibility",
+        "personnel_benefit_flexibility_desc": "We offer flexible staffing solutions, from single personnel placements to complete crew provision, on both short-term and long-term contracts.",
+        
+        "recruitment_process_title": "Our Recruitment Process",
+        "recruitment_step1": "Needs Assessment",
+        "recruitment_step1_desc": "We begin by thoroughly understanding your specific personnel requirements, including qualifications, experience levels, contract duration, and any special skills needed.",
+        "recruitment_step2": "Candidate Selection",
+        "recruitment_step2_desc": "We identify potential candidates from our database who match your requirements and conduct preliminary screenings.",
+        "recruitment_step3": "Verification",
+        "recruitment_step3_desc": "We verify all certifications, qualifications, and experience, and conduct background checks to ensure the highest standards.",
+        "recruitment_step4": "Client Review",
+        "recruitment_step4_desc": "We present you with qualified candidates for your review and approval, including comprehensive profiles and documentation.",
+        "recruitment_step5": "Deployment",
+        "recruitment_step5_desc": "Once approved, we handle all logistics to ensure the personnel arrive at your vessel on schedule, including travel arrangements, visas, and any required documentation.",
+        
+        "quality_assurance_title": "Our Quality Assurance",
+        "quality_assurance_desc": "At Africa Link, we maintain rigorous quality assurance standards for all personnel we provide:",
+        "quality_assurance_1": "Thorough vetting of qualifications and experience",
+        "quality_assurance_2": "Verification of all certificates and licenses",
+        "quality_assurance_3": "Comprehensive background checks",
+        "quality_assurance_4": "Regular performance evaluations",
+        "quality_assurance_5": "Compliance with international maritime standards and regulations",
+        "quality_assurance_6": "Ongoing training and certification updates",
+        
+        "personnel_cta_title": "Need Maritime Personnel?",
+        "personnel_cta_desc": "Contact us to discuss your personnel requirements and how we can support your maritime operations with qualified professionals.",
+        
+        // Crew Management Page
+        "crew_service_title": "Crew Management Services",
+        "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
+        "crew_overview_title": "Our Crew Management Services",
+        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
+        "crew_services_title": "Our Comprehensive Services",
+        "crew_visa_title": "Visa Services",
+        "crew_transport_title": "Transportation",
+        "crew_accom_title": "Accommodations",
+        "crew_flight_title": "Flight Arrangements",
+        "crew_port_title": "Port/Airport Assistance",
+        "crew_benefits_title": "Benefits of Our Crew Management Services",
+        "crew_benefit_time": "Time Efficiency",
+        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_cost": "Cost Optimization",
+        "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
+        "crew_benefit_compliance": "Regulatory Compliance",
+        "crew_benefit_compliance_desc": "We stay up-to-date with changing immigration and maritime regulations across African countries, ensuring your crew operations always remain compliant with local laws.",
+        "crew_benefit_local": "Local Expertise",
+        "crew_benefit_local_desc": "Our deep understanding of local conditions, customs, and practices in African countries helps navigate cultural nuances and ensure smooth crew operations.",
+        "crew_process_title": "Our Crew Management Process",
+        "crew_process_step1": "Requirements Assessment",
+        "crew_process_step1_desc": "We work with you to understand your specific crew management needs and requirements.",
+        "crew_process_step2": "Planning & Coordination",
+        "crew_process_step2_desc": "We develop a detailed plan and coordinate all necessary services and arrangements.",
+        "crew_process_step3": "Implementation",
+        "crew_process_step3_desc": "We execute all arrangements, ensuring smooth crew rotations and logistics.",
+        "crew_process_step4": "Monitoring & Support",
+        "crew_process_step4_desc": "We provide 24/7 support and monitoring to address any issues or changes that may arise.",
+        "crew_process_step5": "Reporting & Review",
+        "crew_process_step5_desc": "We provide comprehensive reports and review services to ensure continuous improvement.",
+        "crew_cta_title": "Need Crew Management Services?",
+        "crew_cta_desc": "Contact us to discuss how our comprehensive crew management services can support your maritime operations.",
+        "contact_us_btn": "Contact Us",
+        
+        // Crew Management Service Descriptions
+        "crew_visa_desc": "We handle all aspects of visa processing for your crew members, ensuring smooth entry and exit across African countries:",
+        "crew_visa_item1": "Visa application preparation and submission",
+        "crew_visa_item2": "Documentation verification and compliance checks",
+        "crew_visa_item3": "Expedited visa processing for urgent crew changes",
+        "crew_visa_item4": "Work permit coordination for extended stays",
+        "crew_visa_item5": "Visa extensions and amendments as needed",
+        "crew_visa_item6": "Compliance with changing immigration regulations",
+        
+        "crew_transport_desc": "We coordinate all transportation needs for your crew with reliability and comfort as our priorities:",
+        "crew_transport_item1": "Airport transfers with secure, air-conditioned vehicles",
+        "crew_transport_item2": "Port-to-accommodation transportation",
+        "crew_transport_item3": "Services de transport pour rotation d'équipage",
+        "crew_transport_item4": "Assistance de transport d'urgence",
+        "crew_transport_item5": "Transport vers les établissements médicaux en cas de besoin",
+        "crew_transport_item6": "Support de transport 24/7 pour les changements inattendus",
+        
+        "crew_accom_desc": "We arrange quality accommodations that meet your crew's needs and your company's budget:",
+        "crew_accom_item1": "Hotel selection and booking near ports and airports",
+        "crew_accom_item2": "Serviced apartments for extended stays",
+        "crew_accom_item3": "Quality checks to ensure accommodation standards",
+        "crew_accom_item4": "Special dietary requirements coordination",
+        "crew_accom_item5": "Group booking management for larger crews",
+        "crew_accom_item6": "Flexible booking arrangements for changing schedules",
+        
+        "crew_flight_desc": "We handle all flight bookings and logistics to ensure smooth crew rotations:",
+        "crew_flight_item1": "Réservations de vols économiques sur des transporteurs établis",
+        "crew_flight_item2": "Routage optimal pour minimiser les temps de transit",
+        "crew_flight_item3": "Arrangements d'assistance spéciale si nécessaire",
+        "crew_flight_item4": "Coordination des excédents de bagages pour l'équipement d'équipage",
+        "crew_flight_item5": "Gestion des changements et annulations de vols",
+        "crew_flight_item6": "Arrangements de vols d'urgence pendant les perturbations",
+        
+        "crew_port_desc": "Nous fournissons une assistance complète dans les ports et aéroports pour assurer des transitions en douceur:",
+        "crew_port_item1": "Services d'accueil dans les aéroports",
+        "crew_port_item2": "Traitement accéléré de l'immigration lorsque disponible",
+        "crew_port_item3": "Assistance au dédouanement pour les effets personnels",
+        "crew_port_item4": "Coordination d'accès au port et autorisations de sécurité",
+        "crew_port_item5": "Liaison avec les autorités portuaires et aéroportuaires",
+        "crew_port_item6": "Soutien à l'équipage pendant les retards inattendus",
+        
+        // Shipping Support Page
+        "shipping_title": "Shipping Support Services",
+        "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
+        "shipping_services_title": "Our Shipping Support Services",
+        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
+        "shipping_support_title": "Our Support Services",
+        
+        "shipping_port_title": "Port Services",
+        "shipping_port_desc": "Our comprehensive port services include:",
+        "shipping_port_item1": "Cargo handling and stevedoring",
+        "shipping_port_item2": "Ship-to-shore transfers",
+        "shipping_port_item3": "Port agent coordination",
+        "shipping_port_item4": "Berthing arrangements",
+        "shipping_port_item5": "Customs clearance assistance",
+        "shipping_port_item6": "Port security coordination",
+        
+        "shipping_tug_title": "Tugboat Services",
+        "shipping_tug_desc": "We provide reliable tugboat services for:",
+        "shipping_tug_item1": "Ship berthing and unberthing",
+        "shipping_tug_item2": "Harbor towing",
+        "shipping_tug_item3": "Vessel repositioning",
+        "shipping_tug_item4": "Salvage operations",
+        "shipping_tug_item5": "Offshore support",
+        "shipping_tug_item6": "Emergency response",
+        
+        "shipping_accom_title": "Floating Accommodations",
+        "shipping_accom_desc": "Our floating accommodation solutions include:",
+        "shipping_accom_item1": "Fully-equipped accommodation vessels",
+        "shipping_accom_item2": "Temporary living quarters for offshore projects",
+        "shipping_accom_item3": "Catering and hospitality services",
+        "shipping_accom_item4": "Recreation facilities",
+        "shipping_accom_item5": "Medical support services",
+        "shipping_accom_item6": "Communication infrastructure",
+        
+        "shipping_inspect_title": "Marine Inspection Tools",
+        "shipping_inspect_desc": "We provide advanced marine inspection tools and services including:",
+        "shipping_inspect_item1": "Hull inspection equipment",
+        "shipping_inspect_item2": "Underwater inspection drones",
+        "shipping_inspect_item3": "Non-destructive testing equipment",
+        "shipping_inspect_item4": "Condition monitoring systems",
+        "shipping_inspect_item5": "Professional inspection personnel",
+        "shipping_inspect_item6": "Documentation and reporting services",
+        
+        "shipping_benefits_title": "Benefits of Our Shipping Support Services",
+        "shipping_benefit_efficiency": "Improved Operational Efficiency",
+        "shipping_benefit_efficiency_desc": "Our comprehensive support services streamline your maritime operations, reducing downtime and improving overall efficiency.",
+        "shipping_benefit_safety": "Enhanced Safety",
+        "shipping_benefit_safety_desc": "Our professional services and equipment help ensure the safety of your vessels, crew, and cargo.",
+        "shipping_benefit_expertise": "Local Expertise",
+        "shipping_benefit_expertise_desc": "Our deep understanding of African ports and maritime regulations helps navigate complex local requirements.",
+        "shipping_benefit_cost": "Cost-Effective Solutions",
+        "shipping_benefit_cost_desc": "Our integrated services help reduce overall operational costs while maintaining high standards.",
+        
+        "shipping_cta_title": "Need Shipping Support?",
+        "shipping_cta_desc": "Contact our team to discuss how our shipping support services can enhance your maritime operations in Africa.",
+        
+        // Transit Services Page
+        "transit_title": "Transit Services",
+        "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
+        "transit_services_title": "Our Transit Services",
+        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
+        
+        "transit_customs_title": "Customs Clearance Services",
+        "transit_doc_title": "Documentation Management",
+        "transit_doc_desc": "We handle all required documentation for customs clearance, ensuring accuracy and compliance with local regulations:",
+        "transit_doc_item1": "Bills of lading preparation and management",
+        "transit_doc_item2": "Commercial invoice verification",
+        "transit_doc_item3": "Certificate of origin documentation",
+        "transit_doc_item4": "Import/export license coordination",
+        "transit_doc_item5": "Customs declaration forms",
+        
+        "transit_broker_title": "Customs Broker Services",
+        "transit_broker_desc": "Our licensed customs brokers represent your interests and facilitate efficient clearance:",
+        "transit_broker_item1": "Classification of goods for proper tariff applications",
+        "transit_broker_item2": "Duty and tax calculation and payment",
+        "transit_broker_item3": "Liaison with customs officials",
+        "transit_broker_item4": "Regulatory compliance assurance",
+        "transit_broker_item5": "Expedited clearance services",
+        
+        "transit_comply_title": "Regulatory Compliance",
+        "transit_comply_desc": "We ensure your shipments meet all regulatory requirements:",
+        "transit_comply_item1": "Trade compliance audits",
+        "transit_comply_item2": "Regulatory updates and advisory services",
+        "transit_comply_item3": "Specialized permits acquisition",
+        "transit_comply_item4": "Health and safety compliance",
+        "transit_comply_item5": "Environmental regulation adherence",
+        
+        "transit_duty_title": "Duty Optimization",
+        "transit_duty_desc": "We help minimize duty expenses through legal optimization strategies:",
+        "transit_duty_item1": "Tariff classification analysis",
+        "transit_duty_item2": "Free trade agreement utilization",
+        "transit_duty_item3": "Bonded warehouse solutions",
+        "transit_duty_item4": "Duty drawback and recovery services",
+        "transit_duty_item5": "Strategic import planning",
+        
+        "transit_logistics_title": "Transit Logistics",
+        "transit_logistics_desc": "Our transit logistics services provide end-to-end solutions for moving your cargo efficiently through Africa:",
+        "transit_logistics_item1": "<strong>Multi-modal Transportation:</strong> Coordination of sea, air, rail, and road transport for seamless cargo movement",
+        "transit_logistics_item2": "<strong>Route Optimization:</strong> Strategic planning to identify the most efficient and cost-effective transport routes",
+        "transit_logistics_item3": "<strong>Cross-border Management:</strong> Expert handling of border crossings and transit formalities",
+        "transit_logistics_item4": "<strong>Cargo Tracking:</strong> Real-time monitoring and status updates on your shipments",
+        "transit_logistics_item5": "<strong>Risk Management:</strong> Comprehensive strategies to mitigate transit risks and ensure security",
+        
+        "transit_process_title": "Our Transit Logistics Process",
+        "transit_process_step1": "Pre-Transit Planning",
+        "transit_process_step1_desc": "Comprehensive route planning, documentation preparation, and regulatory requirement analysis",
+        "transit_process_step2": "Customs Processing",
+        "transit_process_step2_desc": "Efficient customs clearance at origin, transit points, and destination",
+        "transit_process_step3": "Transport Execution",
+        "transit_process_step3_desc": "Coordinated movement through multiple transport modes and border crossings",
+        "transit_process_step4": "Monitoring & Intervention",
+        "transit_process_step4_desc": "Real-time tracking and proactive issue resolution during transit",
+        "transit_process_step5": "Delivery & Documentation",
+        "transit_process_step5_desc": "Final delivery coordination and comprehensive documentation completion",
+        
+        "transit_regional_title": "Regional Expertise",
+        "transit_regional_desc": "Our transit services are strengthened by our deep regional expertise across Africa:",
+        "transit_regional_item1": "West African customs procedures and regulations",
+        "transit_regional_item2": "East African Community (EAC) customs union protocols",
+        "transit_regional_item3": "Southern African Development Community (SADC) trade agreements",
+        "transit_regional_item4": "North African border and port operations",
+        "transit_regional_item5": "African Continental Free Trade Area (AfCFTA) implementation",
+        "transit_regional_item6": "Country-specific import/export requirements",
+        
+        "transit_cta_title": "Optimisez Vos Opérations de Transit",
+        "transit_cta_desc": "Contactez notre équipe de services de transit pour discuter de la façon dont nous pouvons simplifier votre dédouanement et votre logistique de transit à travers l'Afrique."
+    },
+    
+    // French translations
+    fr: {
+        // Navigation
+        "nav_home": "Accueil",
+        "nav_about": "À Propos",
+        "nav_services": "Services",
+        "nav_contact": "Contact",
+        
+        // Services
+        "service_fuel": "Fourniture de Carburant",
+        "service_shipping": "Support Maritime",
+        "service_transit": "Services de Transit",
+        "service_crew": "Gestion d'Équipage",
+        "service_personnel": "Fourniture de Personnel",
+        
+        // Service Descriptions for Homepage Cards
+        "service_fuel_desc": "Services professionnels de soutage assurant que vos navios disposent du carburant nécessaire quand ils en ont besoin.",
+        "service_shipping_desc": "Support maritime complet comprenant services portuaires, remorqueurs, hébergements flottants et outils d'inspection marine.",
+        "service_transit_desc": "Simplifiez votre dédouanement et votre logistique de transit grâce à notre expertise spécialisée.",
+        "service_crew_desc": "Services complets de gestion d'équipage incluant visas, transport, hébergement et assistance portuaire/aéroportuaire.",
+        "service_personnel_desc": "Accès à des capitaines et membres d'équipage qualifiés pour assurer le bon déroulement de vos opérations maritimes.",
+        
+        // Hero Section
+        "hero_title": "AfricaLink Solutions Maritimes et Logistiques",
+        "hero_subtitle": "Votre partenaire de confiance pour un soutien maritime et logistique complet en Afrique",
+        "hero_cta": "Découvrir Nos Services",
+        
+        // Services Section
+        "services_title": "Nos Services de Support Maritime",
+        "learn_more": "En Savoir Plus",
+        
+        // About Section
+        "about_title": "À Propos d'Africa Link",
+        "about_p1": "Africa Link est un fournisseur de confiance de services de soutien maritime et logistique à travers l'Afrique. Avec des années d'expérience dans l'industrie, nous offrons des solutions complètes adaptées aux besoins uniques de nos clients.",
+        "about_p2": "Notre équipe d'experts se consacre à assurer que vos opérations maritimes se déroulent de manière fluide, efficace et sécurisée, vous permettant de vous concentrer sur vos activités principales.",
+        
+        // Contact Section
+        "contact_title": "Contactez-Nous",
+        "contact_address": "Adresse:",
+        "contact_phone": "Téléphone:",
+        "contact_email": "Email:",
+        "contact_us_btn": "Contactez-Nous",
+        
+        // Footer
+        "footer_tagline": "Votre partenaire de confiance pour les services de soutien maritime et logistique à travers l'Afrique.",
+        "footer_quick_links": "Liens Rapides",
+        "footer_services": "Nos Services",
+        "footer_copyright": "© 2025 Africa Link. Tous droits réservés.",
+        
+        // Fuel Supply Page
+        "fuel_service_title": "Services d'Approvisionnement en Carburant",
+        "fuel_service_subtitle": "Services professionnels de soutage assurant que vos navios tenham o combustível que precisam quando necessário",
+        "fuel_overview_title": "Nos Services de Soutage",
+        "fuel_overview_p1": "Chez Africa Link, nous comprenons qu'un approvisionnamento fiável em combustível é essencial para suas operações marítimas. Nos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de parada e maximizando a eficiência operacional.",
+        "fuel_overview_p2": "Com nosso vasto rede de fornecedores e parceiros logísticos através do continente africano, podemos fornecer serviços de abastecimento em portos-chave e locais offshore, garantindo que suas necessidades em combustível sejam atendidas independentemente da localização do seu navio.",
+        "key_features": "Caractéristiques Principales",
+        "quality_fuel": "Carburant de Qualité",
+        "quality_fuel_desc": "Nous nous approvisionnons en carburants marins de haute qualité qui respectent les normes internationales et sont conformes aux réglementations sur les émissions de soufre.",
+        "strategic_locations": "Emplacements Stratégiques",
+        "strategic_locations_desc": "Nous offrons des services de soutage dans les ports clés et les sites offshore à travers l'Afrique.",
+        "timely_delivery": "Livraison Ponctuelle",
+        "timely_delivery_desc": "Nous comprenons l'importance de la ponctualité dans les opérations maritimes et garantissons une livraison de carburant dans les délais.",
+        "quality_assurance": "Assurance Qualité",
+        "quality_assurance_desc": "Notre carburant fait l'objet d'un contrôle de qualité rigoureux pour garantir qu'il répond à vos spécifications et aux normes de l'industrie.",
+        "fuel_types_title": "Types de Carburant que Nous Fournissons",
+        "fuel_type_mgo": "<strong>Gasoil Marine (MGO)</strong> - Carburant distillé à faible teneur en soufre",
+        "fuel_type_mdo": "<strong>Diesel Marine (MDO)</strong> - Un mélange de distillats et de fiouls lourds",
+        "fuel_type_vlsfo": "<strong>Fioul à Très Faible Teneur en Soufre (VLSFO)</strong> - Conforme aux réglementations IMO 2020",
+        "fuel_type_hfo": "<strong>Fioul Lourd (HFO)</strong> - Pour les navires équipés de systèmes d'épuration",
+        "fuel_type_lng": "<strong>Gaz Naturel Liquéfié (GNL)</strong> - Option de carburant alternatif propre",
+        "bunkering_process_title": "Notre Processus de Soutage",
+        "bunkering_step1": "<strong>Demande et Planification</strong> - Nous recevons vos besoins en carburant et créons un plan de livraison détaillé.",
+        "bunkering_step2": "<strong>Coordination Logistique</strong> - Notre équipe coordonne avec les fournisseurs et les autorités portuaires pour assurer des opérations fluides.",
+        "bunkering_step3": "<strong>Contrôle Qualité</strong> - Nous inspectons la qualité du carburant avant la livraison pour garantir qu'il répond aux spécifications.",
+        "bunkering_step4": "<strong>Livraison</strong> - Le carburant est livré à votre navire à l'heure et au lieu convenus.",
+        "bunkering_step5": "<strong>Documentation</strong> - Nous fournissons toute la documentation nécessaire pour vos dossiers.",
+        "need_bunkering": "Besoin de Services de Soutage?",
+        "contact_fuel_desc": "Contactez-nous pour discuter des besoins en carburant de votre navio et comment nous pouvons soutenir vos opérations.",
+        
+        // Personnel Provision Page - Basic French translations
+        "personnel_title": "Services de Fourniture de Personnel",
+        "personnel_subtitle": "Accès à des capitaines et membres d'équipage qualifiés pour assurer le bon déroulement de vos opérations maritimes",
+        "personnel_service_title": "Nos Services de Fourniture de Personnel",
+        "personnel_service_p1": "Chez Africa Link, nous comprenons que le succès de vos opérations maritimes dépend de la présence du personnel adéquat à la barre. Nos services de fourniture de personnel vous mettent en relation avec des capitaines, officiers et membres d'équipage hautement qualifiés qui apportent expertise, expérience et professionnalisme à vos navires.",
+        "personnel_service_p2": "Whether you need to fill temporary vacancies, assemble a complete crew, or find specialized maritime professionals, our extensive network of vetted maritime personnel ensures you have access to the talent you need, when you need it.",
+        "personnel_categories_title": "Maritime Personnel We Provide",
+        
+        "personnel_officers": "Officers",
+        "personnel_officers_desc": "We provide access to experienced and certified officers for your vessel:",
+        "personnel_officers_1": "Captains/Masters with extensive command experience",
+        "personnel_officers_2": "Chief Officers/First Mates",
+        "personnel_officers_3": "Second and Third Officers",
+        "personnel_officers_4": "Chief Engineers with comprehensive technical knowledge",
+        "personnel_officers_5": "First, Second, and Third Engineers",
+        "personnel_officers_6": "Electrical Officers and Technical Officers",
+        
+        "personnel_deck": "Deck Crew",
+        "personnel_deck_desc": "Our deck crew members are skilled and trained to handle various vessel operations:",
+        "personnel_deck_1": "Bosuns with leadership and operational experience",
+        "personnel_deck_2": "Able Seamen (AB) qualified in seamanship duties",
+        "personnel_deck_3": "Ordinary Seamen (OS) for general deck support",
+        "personnel_deck_4": "Deckhands experienced in various vessel types",
+        "personnel_deck_5": "Riggers specialized in offshore operations",
+        "personnel_deck_6": "Crane Operators for specialized cargo handling",
+        
+        "personnel_engine": "Engine Crew",
+        "personnel_engine_desc": "Our engine department personnel ensure the efficient operation of your vessel's propulsion systems:",
+        "personnel_engine_1": "Motormen with mechanical expertise",
+        "personnel_engine_2": "Oilers skilled in machinery maintenance",
+        "personnel_engine_3": "Fitters trained in repair and fabrication",
+        "personnel_engine_4": "Electricians for electrical system maintenance",
+        "personnel_engine_5": "Engine Room Attendants for general support",
+        "personnel_engine_6": "Refrigeration Engineers for specialized systems",
+        
+        "personnel_hospitality": "Hospitality Staff",
+        "personnel_hospitality_desc": "We provide quality hospitality staff to ensure comfort aboard your vessels:",
+        "personnel_hospitality_1": "Chief Cooks experienced in maritime galleys",
+        "personnel_hospitality_2": "Second Cooks and Assistant Cooks",
+        "personnel_hospitality_3": "Stewards for cabin and common area service",
+        "personnel_hospitality_4": "Messmen for dining service and support",
+        "personnel_hospitality_5": "Laundry Personnel for maintenance of linens and uniforms",
+        "personnel_hospitality_6": "Medical Personnel for health and safety support",
+        
+        "personnel_specialized": "Specialized Personnel",
+        "personnel_specialized_desc": "We also provide specialized maritime personnel for specific operations:",
+        "personnel_specialized_1": "Dynamic Positioning Officers (DPOs) for specialized vessels",
+        "personnel_specialized_2": "ROV (Remotely Operated Vehicle) Technicians",
+        "personnel_specialized_3": "Offshore Installation Managers",
+        "personnel_specialized_4": "HSE (Health, Safety, Environment) Officers",
+        "personnel_specialized_5": "Maritime Security Personnel",
+        "personnel_specialized_6": "Surveyors for specialized inspection services",
+        
+        "personnel_benefits_title": "Benefits of Our Personnel Provision Services",
+        "personnel_benefit_qualified": "Qualified Personnel",
+        "personnel_benefit_qualified_desc": "All personnel undergo rigorous screening, including verification of certifications, experience, and references to ensure they meet international maritime standards.",
+        "personnel_benefit_response": "Quick Response",
+        "personnel_benefit_response_desc": "Our extensive network allows us to respond rapidly to your personnel needs, even on short notice or in emergency situations.",
+        "personnel_benefit_knowledge": "Local Knowledge",
+        "personnel_benefit_knowledge_desc": "Many of our personnel have specific experience working in African waters and ports, bringing valuable local knowledge to your operations.",
+        "personnel_benefit_flexibility": "Flexibility",
+        "personnel_benefit_flexibility_desc": "We offer flexible staffing solutions, from single personnel placements to complete crew provision, on both short-term and long-term contracts.",
+        
+        "recruitment_process_title": "Our Recruitment Process",
+        "recruitment_step1": "Needs Assessment",
+        "recruitment_step1_desc": "We begin by thoroughly understanding your specific personnel requirements, including qualifications, experience levels, contract duration, and any special skills needed.",
+        "recruitment_step2": "Candidate Selection",
+        "recruitment_step2_desc": "We identify potential candidates from our database who match your requirements and conduct preliminary screenings.",
+        "recruitment_step3": "Verification",
+        "recruitment_step3_desc": "We verify all certifications, qualifications, and experience, and conduct background checks to ensure the highest standards.",
+        "recruitment_step4": "Client Review",
+        "recruitment_step4_desc": "We present you with qualified candidates for your review and approval, including comprehensive profiles and documentation.",
+        "recruitment_step5": "Deployment",
+        "recruitment_step5_desc": "Once approved, we handle all logistics to ensure the personnel arrive at your vessel on schedule, including travel arrangements, visas, and any required documentation.",
+        
+        "quality_assurance_title": "Our Quality Assurance",
+        "quality_assurance_desc": "At Africa Link, we maintain rigorous quality assurance standards for all personnel we provide:",
+        "quality_assurance_1": "Thorough vetting of qualifications and experience",
+        "quality_assurance_2": "Verification of all certificates and licenses",
+        "quality_assurance_3": "Comprehensive background checks",
+        "quality_assurance_4": "Regular performance evaluations",
+        "quality_assurance_5": "Compliance with international maritime standards and regulations",
+        "quality_assurance_6": "Ongoing training and certification updates",
+        
+        "personnel_cta_title": "Need Maritime Personnel?",
+        "personnel_cta_desc": "Contact us to discuss your personnel requirements and how we can support your maritime operations with qualified professionals.",
+        
+        // Crew Management Page
+        "crew_service_title": "Crew Management Services",
+        "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
+        "crew_overview_title": "Our Crew Management Services",
+        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
+        "crew_services_title": "Our Comprehensive Services",
+        "crew_visa_title": "Visa Services",
+        "crew_transport_title": "Transportation",
+        "crew_accom_title": "Accommodations",
+        "crew_flight_title": "Flight Arrangements",
+        "crew_port_title": "Port/Airport Assistance",
+        "crew_benefits_title": "Benefits of Our Crew Management Services",
+        "crew_benefit_time": "Time Efficiency",
+        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_cost": "Cost Optimization",
+        "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
+        "crew_benefit_compliance": "Regulatory Compliance",
+        "crew_benefit_compliance_desc": "We stay up-to-date with changing immigration and maritime regulations across African countries, ensuring your crew operations always remain compliant with local laws.",
+        "crew_benefit_local": "Local Expertise",
+        "crew_benefit_local_desc": "Our deep understanding of local conditions, customs, and practices in African countries helps navigate cultural nuances and ensure smooth crew operations.",
+        "crew_process_title": "Our Crew Management Process",
+        "crew_process_step1": "Requirements Assessment",
+        "crew_process_step1_desc": "We work with you to understand your specific crew management needs and requirements.",
+        "crew_process_step2": "Planning & Coordination",
+        "crew_process_step2_desc": "We develop a detailed plan and coordinate all necessary services and arrangements.",
+        "crew_process_step3": "Implementation",
+        "crew_process_step3_desc": "We execute all arrangements, ensuring smooth crew rotations and logistics.",
+        "crew_process_step4": "Monitoring & Support",
+        "crew_process_step4_desc": "We provide 24/7 support and monitoring to address any issues or changes that may arise.",
+        "crew_process_step5": "Reporting & Review",
+        "crew_process_step5_desc": "We provide comprehensive reports and review services to ensure continuous improvement.",
+        "crew_cta_title": "Need Crew Management Services?",
+        "crew_cta_desc": "Contact us to discuss how our comprehensive crew management services can support your maritime operations.",
+        "contact_us_btn": "Contact Us",
+        
+        // Crew Management Service Descriptions
+        "crew_visa_desc": "We handle all aspects of visa processing for your crew members, ensuring smooth entry and exit across African countries:",
+        "crew_visa_item1": "Visa application preparation and submission",
+        "crew_visa_item2": "Documentation verification and compliance checks",
+        "crew_visa_item3": "Expedited visa processing for urgent crew changes",
+        "crew_visa_item4": "Work permit coordination for extended stays",
+        "crew_visa_item5": "Visa extensions and amendments as needed",
+        "crew_visa_item6": "Compliance with changing immigration regulations",
+        
+        "crew_transport_desc": "We coordinate all transportation needs for your crew with reliability and comfort as our priorities:",
+        "crew_transport_item1": "Airport transfers with secure, air-conditioned vehicles",
+        "crew_transport_item2": "Port-to-accommodation transportation",
+        "crew_transport_item3": "Services de transport pour rotation d'équipage",
+        "crew_transport_item4": "Assistance de transport d'urgence",
+        "crew_transport_item5": "Transport vers les établissements médicaux en cas de besoin",
+        "crew_transport_item6": "Support de transport 24/7 pour les changements inattendus",
+        
+        "crew_accom_desc": "We arrange quality accommodations that meet your crew's needs and your company's budget:",
+        "crew_accom_item1": "Hotel selection and booking near ports and airports",
+        "crew_accom_item2": "Serviced apartments for extended stays",
+        "crew_accom_item3": "Quality checks to ensure accommodation standards",
+        "crew_accom_item4": "Special dietary requirements coordination",
+        "crew_accom_item5": "Group booking management for larger crews",
+        "crew_accom_item6": "Flexible booking arrangements for changing schedules",
+        
+        "crew_flight_desc": "We handle all flight bookings and logistics to ensure smooth crew rotations:",
+        "crew_flight_item1": "Réservations de vols économiques sur des transporteurs établis",
+        "crew_flight_item2": "Routage optimal pour minimiser les temps de transit",
+        "crew_flight_item3": "Arrangements d'assistance spéciale si nécessaire",
+        "crew_flight_item4": "Coordination des excédents de bagages pour l'équipement d'équipage",
+        "crew_flight_item5": "Gestion des changements et annulations de vols",
+        "crew_flight_item6": "Arrangements de vols d'urgence pendant les perturbations",
+        
+        "crew_port_desc": "Nous fournissons une assistance complète dans les ports et aéroports pour assurer des transitions en douceur:",
+        "crew_port_item1": "Services d'accueil dans les aéroports",
+        "crew_port_item2": "Traitement accéléré de l'immigration lorsque disponible",
+        "crew_port_item3": "Assistance au dédouanement pour les effets personnels",
+        "crew_port_item4": "Coordination d'accès au port et autorisations de sécurité",
+        "crew_port_item5": "Liaison avec les autorités portuaires et aéroportuaires",
+        "crew_port_item6": "Soutien à l'équipage pendant les retards inattendus",
+        
+        // Shipping Support Page
+        "shipping_title": "Shipping Support Services",
+        "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
+        "shipping_services_title": "Our Shipping Support Services",
+        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
+        "shipping_support_title": "Our Support Services",
+        
+        "shipping_port_title": "Port Services",
+        "shipping_port_desc": "Our comprehensive port services include:",
+        "shipping_port_item1": "Cargo handling and stevedoring",
+        "shipping_port_item2": "Ship-to-shore transfers",
+        "shipping_port_item3": "Port agent coordination",
+        "shipping_port_item4": "Berthing arrangements",
+        "shipping_port_item5": "Customs clearance assistance",
+        "shipping_port_item6": "Port security coordination",
+        
+        "shipping_tug_title": "Tugboat Services",
+        "shipping_tug_desc": "We provide reliable tugboat services for:",
+        "shipping_tug_item1": "Ship berthing and unberthing",
+        "shipping_tug_item2": "Harbor towing",
+        "shipping_tug_item3": "Vessel repositioning",
+        "shipping_tug_item4": "Salvage operations",
+        "shipping_tug_item5": "Offshore support",
+        "shipping_tug_item6": "Emergency response",
+        
+        "shipping_accom_title": "Floating Accommodations",
+        "shipping_accom_desc": "Our floating accommodation solutions include:",
+        "shipping_accom_item1": "Fully-equipped accommodation vessels",
+        "shipping_accom_item2": "Temporary living quarters for offshore projects",
+        "shipping_accom_item3": "Catering and hospitality services",
+        "shipping_accom_item4": "Recreation facilities",
+        "shipping_accom_item5": "Medical support services",
+        "shipping_accom_item6": "Communication infrastructure",
+        
+        "shipping_inspect_title": "Marine Inspection Tools",
+        "shipping_inspect_desc": "We provide advanced marine inspection tools and services including:",
+        "shipping_inspect_item1": "Hull inspection equipment",
+        "shipping_inspect_item2": "Underwater inspection drones",
+        "shipping_inspect_item3": "Non-destructive testing equipment",
+        "shipping_inspect_item4": "Condition monitoring systems",
+        "shipping_inspect_item5": "Professional inspection personnel",
+        "shipping_inspect_item6": "Documentation and reporting services",
+        
+        "shipping_benefits_title": "Benefits of Our Shipping Support Services",
+        "shipping_benefit_efficiency": "Improved Operational Efficiency",
+        "shipping_benefit_efficiency_desc": "Our comprehensive support services streamline your maritime operations, reducing downtime and improving overall efficiency.",
+        "shipping_benefit_safety": "Enhanced Safety",
+        "shipping_benefit_safety_desc": "Our professional services and equipment help ensure the safety of your vessels, crew, and cargo.",
+        "shipping_benefit_expertise": "Local Expertise",
+        "shipping_benefit_expertise_desc": "Our deep understanding of African ports and maritime regulations helps navigate complex local requirements.",
+        "shipping_benefit_cost": "Cost-Effective Solutions",
+        "shipping_benefit_cost_desc": "Our integrated services help reduce overall operational costs while maintaining high standards.",
+        
+        "shipping_cta_title": "Need Shipping Support?",
+        "shipping_cta_desc": "Contact our team to discuss how our shipping support services can enhance your maritime operations in Africa.",
+        
+        // Transit Services Page
+        "transit_title": "Transit Services",
+        "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
+        "transit_services_title": "Our Transit Services",
+        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
+        
+        "transit_customs_title": "Customs Clearance Services",
+        "transit_doc_title": "Documentation Management",
+        "transit_doc_desc": "We handle all required documentation for customs clearance, ensuring accuracy and compliance with local regulations:",
+        "transit_doc_item1": "Bills of lading preparation and management",
+        "transit_doc_item2": "Commercial invoice verification",
+        "transit_doc_item3": "Certificate of origin documentation",
+        "transit_doc_item4": "Import/export license coordination",
+        "transit_doc_item5": "Customs declaration forms",
+        
+        "transit_broker_title": "Customs Broker Services",
+        "transit_broker_desc": "Our licensed customs brokers represent your interests and facilitate efficient clearance:",
+        "transit_broker_item1": "Classification of goods for proper tariff applications",
+        "transit_broker_item2": "Duty and tax calculation and payment",
+        "transit_broker_item3": "Liaison with customs officials",
+        "transit_broker_item4": "Regulatory compliance assurance",
+        "transit_broker_item5": "Expedited clearance services",
+        
+        "transit_comply_title": "Regulatory Compliance",
+        "transit_comply_desc": "We ensure your shipments meet all regulatory requirements:",
+        "transit_comply_item1": "Trade compliance audits",
+        "transit_comply_item2": "Regulatory updates and advisory services",
+        "transit_comply_item3": "Specialized permits acquisition",
+        "transit_comply_item4": "Health and safety compliance",
+        "transit_comply_item5": "Environmental regulation adherence",
+        
+        "transit_duty_title": "Duty Optimization",
+        "transit_duty_desc": "We help minimize duty expenses through legal optimization strategies:",
+        "transit_duty_item1": "Tariff classification analysis",
+        "transit_duty_item2": "Free trade agreement utilization",
+        "transit_duty_item3": "Bonded warehouse solutions",
+        "transit_duty_item4": "Duty drawback and recovery services",
+        "transit_duty_item5": "Strategic import planning",
+        
+        "transit_logistics_title": "Transit Logistics",
+        "transit_logistics_desc": "Our transit logistics services provide end-to-end solutions for moving your cargo efficiently through Africa:",
+        "transit_logistics_item1": "<strong>Multi-modal Transportation:</strong> Coordination of sea, air, rail, and road transport for seamless cargo movement",
+        "transit_logistics_item2": "<strong>Route Optimization:</strong> Strategic planning to identify the most efficient and cost-effective transport routes",
+        "transit_logistics_item3": "<strong>Cross-border Management:</strong> Expert handling of border crossings and transit formalities",
+        "transit_logistics_item4": "<strong>Cargo Tracking:</strong> Real-time monitoring and status updates on your shipments",
+        "transit_logistics_item5": "<strong>Risk Management:</strong> Comprehensive strategies to mitigate transit risks and ensure security",
+        
+        "transit_process_title": "Our Transit Logistics Process",
+        "transit_process_step1": "Pre-Transit Planning",
+        "transit_process_step1_desc": "Comprehensive route planning, documentation preparation, and regulatory requirement analysis",
+        "transit_process_step2": "Customs Processing",
+        "transit_process_step2_desc": "Efficient customs clearance at origin, transit points, and destination",
+        "transit_process_step3": "Transport Execution",
+        "transit_process_step3_desc": "Coordinated movement through multiple transport modes and border crossings",
+        "transit_process_step4": "Monitoring & Intervention",
+        "transit_process_step4_desc": "Real-time tracking and proactive issue resolution during transit",
+        "transit_process_step5": "Delivery & Documentation",
+        "transit_process_step5_desc": "Final delivery coordination and comprehensive documentation completion",
+        
+        "transit_regional_title": "Regional Expertise",
+        "transit_regional_desc": "Our transit services are strengthened by our deep regional expertise across Africa:",
+        "transit_regional_item1": "West African customs procedures and regulations",
+        "transit_regional_item2": "East African Community (EAC) customs union protocols",
+        "transit_regional_item3": "Southern African Development Community (SADC) trade agreements",
+        "transit_regional_item4": "North African border and port operations",
+        "transit_regional_item5": "African Continental Free Trade Area (AfCFTA) implementation",
+        "transit_regional_item6": "Country-specific import/export requirements",
+        
+        "transit_cta_title": "Optimisez Vos Opérations de Transit",
+        "transit_cta_desc": "Contactez notre équipe de services de transit pour discuter de la façon dont nous pouvons simplifier votre dédouanement et votre logistique de transit à travers l'Afrique."
+    },
+    
+    // Portuguese translations
+    pt: {
+        // Navigation
+        "nav_home": "Início",
+        "nav_about": "Sobre Nós",
+        "nav_services": "Serviços",
+        "nav_contact": "Contato",
+        
+        // Services
+        "service_fuel": "Fornecimento de Combustível",
+        "service_shipping": "Suporte de Navegação",
+        "service_transit": "Serviços de Trânsito",
+        "service_crew": "Gestão de Tripulação",
+        "service_personnel": "Provisão de Pessoal",
+        
+        // Service Descriptions for Homepage Cards
+        "service_fuel_desc": "Serviços profissionais de abastecimento garantindo que seus navios tenham o combustível necessário quando precisarem.",
+        "service_shipping_desc": "Suporte completo de navegação incluindo serviços portuários, rebocadores, hébergements flutuantes e ferramentas de inspeção marinha.",
+        "service_transit_desc": "Simplifique seu desembaraço aduaneiro e logística de trânsito com nossa expertise especializada.",
+        "service_crew_desc": "Serviços abrangentes de gestão de tripulação incluindo vistos, transporte, acomodações e assistência portuária/aeroportuária.",
+        "service_personnel_desc": "Acesso a capitães e tripulantes qualificados para garantir que suas operações marítimas funcionem sem problemas.",
+        
+        // Hero Section
+        "hero_title": "AfricaLink Soluções Marítimas e Logísticas",
+        "hero_subtitle": "Seu parceiro confiável para suporte marítimo e logístico abrangente em toda a África",
+        "hero_cta": "Explorar Nossos Serviços",
+        
+        // Services Section
+        "services_title": "Nossos Serviços de Suporte Marítimo",
+        "learn_more": "Saiba Mais",
+        
+        // About Section
+        "about_title": "Sobre a Africa Link",
+        "about_p1": "Africa Link é um provedor confiável de serviços de suporte marítimo e logístico em toda a África. Com anos de experiência no setor, oferecemos soluções abrangentes adaptadas para atender às necessidades únicas de nossos clientes.",
+        "about_p2": "Nossa equipe de especialistas é dedicada a garantir que suas operações marítimas funcionem de maneira suave, eficiente e segura, permitindo que você se concentre em suas atividades comerciais principais.",
+        
+        // Contact Section
+        "contact_title": "Fale Conosco",
+        "contact_address": "Endereço:",
+        "contact_phone": "Telefone:",
+        "contact_email": "Email:",
+        "contact_us_btn": "Fale Conosco",
+        
+        // Footer
+        "footer_tagline": "Seu parceiro confiável para serviços de suporte marítimo e logístico em toda a África.",
+        "footer_quick_links": "Links Rápidos",
+        "footer_services": "Nossos Serviços",
+        "footer_copyright": "© 2025 Africa Link. Todos os direitos reservados.",
+        
+        // Fuel Supply Page - complete translations
+        "fuel_service_title": "Serviços de Fornecimento de Combustível",
+        "fuel_service_subtitle": "Serviços profissionais de abastecimento garantindo que seus navios tenham o combustível que precisam quando necessário",
+        "fuel_overview_title": "Nossos Serviços de Abastecimento",
+        "fuel_overview_p1": "Na Africa Link, entendemos que um fornecimento confiável de combustível é essencial para suas operações marítimas. Nossos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de inatividade e maximizando a eficiência operacional.",
+        "fuel_overview_p2": "Com nossa vasta rede de fornecedores e parceiros logísticos em todo o continente africano, podemos fornecer serviços de abastecimento em portos-chave e locais offshore, garantindo que suas necessidades de combustível sejam atendidas independentemente da localização do seu navio.",
+        "key_features": "Principais Características",
+        "quality_fuel": "Combustível de Qualidade",
+        "quality_fuel_desc": "Nós fornecemos combustíveis marítimos de alta qualidade que atendem aos padrões internacionais e cumprem com as regulamentações de emissões de enxofre.",
+        "strategic_locations": "Localizações Estratégicas",
+        "strategic_locations_desc": "Nós fornecemos serviços de abastecimento em portos-chave e locais offshore em toda a África.",
+        "timely_delivery": "Entrega Pontual",
+        "timely_delivery_desc": "Nós entendemos a importância da pontualidade nas operações marítimas e garantimos a entrega de combustível no prazo.",
+        "quality_assurance": "Garantia de Qualidade",
+        "quality_assurance_desc": "Nosso combustível passa por rigoroso controle de qualidade para garantir que atenda às suas especificações e aos padrões da indústria.",
+        "fuel_types_title": "Tipos de Combustível que Fornecemos",
+        "fuel_type_mgo": "<strong>Óleo Combustível Marítimo (MGO)</strong> - Combustível destilado de baixo teor de enxofre",
+        "fuel_type_mdo": "<strong>Óleo Diesel Marítimo (MDO)</strong> - Un mélange de distillats et de fiouls lourds",
+        "fuel_type_vlsfo": "<strong>Óleo Combustível com Muito Baixo Teor de Enxofre (VLSFO)</strong> - Conforme aux réglementations IMO 2020",
+        "fuel_type_hfo": "<strong>Óleo Combustível Pesado (HFO)</strong> - Para navios com sistemas de depuração",
+        "fuel_type_lng": "<strong>Gás Natural Liquéfié (GNL)</strong> - Option de carburant alternatif propre",
+        "bunkering_process_title": "Notre Processo de Abastecimento",
+        "bunkering_step1": "<strong>Solicitação e Planejamento</strong> - Recebemos seus requisitos de combustível e criamos um plano detalhado de entrega.",
+        "bunkering_step2": "<strong>Coordenação Logística</strong> - Nossa equipe coordena com fornecedores e autoridades portuárias para garantir operações tranquilas.",
+        "bunkering_step3": "<strong>Controle de Qualidade</strong> - Inspecionamos a qualitade do combustível antes da entrega para garantir que atenda às especificações.",
+        "bunkering_step4": "<strong>Entrega</strong> - O combustível é entregue ao seu navio no horário e local acordados.",
+        "bunkering_step5": "<strong>Documentação</strong> - Fornecemos toda a documentação nécessária para seus registros.",
+        "need_bunkering": "Besoin de Services de Soutage?",
+        "contact_fuel_desc": "Contactez-nous pour discuter des besoins en carburant de votre navio et comment nous pouvons soutenir vos opérations.",
+        
+        // Personnel Provision Page - Basic Portuguese translations
+        "personnel_title": "Serviços de Provisão de Pessoal",
+        "personnel_subtitle": "Acesso a capitães e membros de tripulação qualificados para garantir que suas operações marítimas funcionem sem problemas",
+        "personnel_service_title": "Nossos Serviços de Provisão de Pessoal",
+        "personnel_service_p1": "Na Africa Link, entendemos que o sucesso de suas operações marítimas depende de ter o pessoal certo no comando. Nossos Serviços de Provisão de Pessoal conectam você a capitães, oficiais e membros de tripulação altamente qualificados que trazem expertise, experiência e profissionalismo para seus navios.",
+        "personnel_service_p2": "Seja para preencher vagas temporárias, montar uma tripulação completa ou encontrar profissionais marítimos especializados, nossa extensa rede de pessoal marítimo verificado garante que você tenha acesso ao talento necessário, quando precisar.",
+        "personnel_categories_title": "Pessoal Marítimo que Fornecemos",
+        
+        "personnel_officers": "Oficiais",
+        "personnel_officers_desc": "Fornecemos acesso a oficiais experientes e certificados para seu navio:",
+        "personnel_officers_1": "Capitães com ampla experiência de comando",
+        "personnel_officers_2": "Imediatos/Primeiros Oficiais",
+        "personnel_officers_3": "Segundos e Terceiros Oficiais",
+        "personnel_officers_4": "Chefes de Máquinas com conhecimento técnico abrangente",
+        "personnel_officers_5": "Primeiros, Segundos e Terceiros Maquinistas",
+        "personnel_officers_6": "Oficiais Elétricos e Oficiais Técnicos",
+        
+        "personnel_deck": "Tripulação de Convés",
+        "personnel_deck_desc": "Nossos tripulantes de convés são habilidosos e treinados para lidar com várias operações de embarcações:",
+        "personnel_deck_1": "Contramestres com experiência em liderança e operações",
+        "personnel_deck_2": "Marinheiros de Primeira Classe (AB) qualificados em funções de marinharia",
+        "personnel_deck_3": "Marinheiros Comuns (OS) para suporte geral de convés",
+        "personnel_deck_4": "Marinheiros com experiência em vários tipos de embarcações",
+        "personnel_deck_5": "Operadores de aparelhos de içar especializados em operações offshore",
+        "personnel_deck_6": "Operadores de Guindaste para manuseio especializado de carga",
+        
+        "personnel_engine": "Tripulação de Máquinas",
+        "personnel_engine_desc": "Nossa equipe do departamento de máquinas garante a operação eficiente dos sistemas de propulsão do seu navio:",
+        "personnel_engine_1": "Motoristas com expertise mecânica",
+        "personnel_engine_2": "Lubrificadores especializados em manutenção de máquinas",
+        "personnel_engine_3": "Ajustadores treinados em reparos e fabricação",
+        "personnel_engine_4": "Eletricistas para manutenção do sistema elétrico",
+        "personnel_engine_5": "Auxiliares de Casa de Máquinas para suporte geral",
+        "personnel_engine_6": "Engenheiros de Refrigeração para sistemas especializados",
+        
+        "personnel_hospitality": "Equipe de Hospitalidade",
+        "personnel_hospitality_desc": "Fornecemos equipe de hospitalidade de qualidade para garantir conforto a bordo dos seus navios:",
+        "personnel_hospitality_1": "Chefes de Cozinha experientes em cozinhas marítimas",
+        "personnel_hospitality_2": "Segundos Cozinheiros e Assistentes de Cozinha",
+        "personnel_hospitality_3": "Comissários para serviço de cabine e áreas comuns",
+        "personnel_hospitality_4": "Atendentes de Mesa para serviço de refeições e suporte",
+        "personnel_hospitality_5": "Pessoal de Lavanderia para manutenção de roupas de cama e uniformes",
+        "personnel_hospitality_6": "Pessoal Médico para suporte de saúde e segurança",
+        
+        "personnel_specialized": "Pessoal Especializado",
+        "personnel_specialized_desc": "Também fornecemos pessoal marítimo especializado para operações específicas:",
+        "personnel_specialized_1": "Oficiais de Posicionamento Dinâmico (DPOs) para embarcações especializadas",
+        "personnel_specialized_2": "Técnicos de ROV (Veículo Operado Remotamente)",
+        "personnel_specialized_3": "Gerentes de Instalações Offshore",
+        "personnel_specialized_4": "Oficiais de HSE (Saúde, Segurança e Meio Ambiente)",
+        "personnel_specialized_5": "Pessoal de Segurança Marítima",
+        "personnel_specialized_6": "Inspetores para serviços de inspeção especializada",
+        
+        "personnel_benefits_title": "Benefícios dos Nossos Serviços de Provisão de Pessoal",
+        "personnel_benefit_qualified": "Pessoal Qualificado",
+        "personnel_benefit_qualified_desc": "Todo o pessoal passa por uma rigorosa seleção, incluindo verificação de certificações, experiência e referências para garantir que atendam aos padrões marítimos internacionais.",
+        "personnel_benefit_response": "Resposta Rápida",
+        "personnel_benefit_response_desc": "Nossa extensa rede nos permite responder rapidamente às suas necessidades de pessoal, mesmo com pouco aviso prévio ou em situações de emergência.",
+        "personnel_benefit_knowledge": "Conhecimento Local",
+        "personnel_benefit_knowledge_desc": "Muitos de nossos profissionais têm experiência específica trabalhando em águas e portos africanos, trazendo valioso conhecimento local para suas operações.",
+        "personnel_benefit_flexibility": "Flexibilidade",
+        "personnel_benefit_flexibility_desc": "Oferecemos soluções flexíveis de pessoal, desde a colocação de pessoal individual até a provisão completa de tripulação, em contratos de curto e longo prazo.",
+        
+        "recruitment_process_title": "Nosso Processo de Recrutamento",
+        "recruitment_step1": "Avaliação de Necessidades",
+        "recruitment_step1_desc": "Começamos por entender completamente seus requisitos específicos de pessoal, incluindo qualificações, níveis de experiência, duração do contrato e quaisquer habilidades especiais necessárias.",
+        "recruitment_step2": "Seleção de Candidatos",
+        "recruitment_step2_desc": "Identificamos potenciais candidatos em nosso banco de dados que correspondem aos seus requisitos e realizamos triagens preliminares.",
+        "recruitment_step3": "Verificação",
+        "recruitment_step3_desc": "Verificamos todas as certificações, qualificações e experiência, e realizamos verificações de antecedentes para garantir os mais altos padrões.",
+        "recruitment_step4": "Revisão pelo Cliente",
+        "recruitment_step4_desc": "Apresentamos a você candidatos qualificados para sua revisão e aprovação, incluindo perfis abrangentes e documentação.",
+        "recruitment_step5": "Implantação",
+        "recruitment_step5_desc": "Uma vez aprovado, cuidamos de toda a logística para garantir que o pessoal chegue ao seu navio no prazo, incluindo arranjos de viagem, vistos e qualquer documentação necessária.",
+        
+        "quality_assurance_title": "Nossa Garantia de Qualidade",
+        "quality_assurance_desc": "Na Africa Link, mantemos rigorosos padrões de garantia de qualidade para todo o pessoal que fornecemos:",
+        "quality_assurance_1": "Verificação minuciosa de qualificações e experiência",
+        "quality_assurance_2": "Verificação de todos os certificados e licenças",
+        "quality_assurance_3": "Verificações abrangentes de antecedentes",
+        "quality_assurance_4": "Avaliações regulares de desempenho",
+        "quality_assurance_5": "Conformidade com normas e regulamentações marítimas internacionais",
+        "quality_assurance_6": "Treinamento contínuo e atualizações de certificação",
+        
+        "personnel_cta_title": "Precisa de Pessoal Marítimo?",
+        "personnel_cta_desc": "Entre em contato para discutir seus requisitos de pessoal e como podemos apoiar suas operações marítimas com profissionais qualificados.",
+        
+        // Crew Management Page
+        "crew_service_title": "Crew Management Services",
+        "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
+        "crew_overview_title": "Our Crew Management Services",
+        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
+        "crew_services_title": "Our Comprehensive Services",
+        "crew_visa_title": "Visa Services",
+        "crew_transport_title": "Transportation",
+        "crew_accom_title": "Accommodations",
+        "crew_flight_title": "Flight Arrangements",
+        "crew_port_title": "Port/Airport Assistance",
+        "crew_benefits_title": "Benefits of Our Crew Management Services",
+        "crew_benefit_time": "Time Efficiency",
+        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_cost": "Cost Optimization",
+        "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
+        "crew_benefit_compliance": "Regulatory Compliance",
+        "crew_benefit_compliance_desc": "We stay up-to-date with changing immigration and maritime regulations across African countries, ensuring your crew operations always remain compliant with local laws.",
+        "crew_benefit_local": "Local Expertise",
+        "crew_benefit_local_desc": "Our deep understanding of local conditions, customs, and practices in African countries helps navigate cultural nuances and ensure smooth crew operations.",
+        "crew_process_title": "Our Crew Management Process",
+        "crew_process_step1": "Requirements Assessment",
+        "crew_process_step1_desc": "We work with you to understand your specific crew management needs and requirements.",
+        "crew_process_step2": "Planning & Coordination",
+        "crew_process_step2_desc": "We develop a detailed plan and coordinate all necessary services and arrangements.",
+        "crew_process_step3": "Implementation",
+        "crew_process_step3_desc": "We execute all arrangements, ensuring smooth crew rotations and logistics.",
+        "crew_process_step4": "Monitoring & Support",
+        "crew_process_step4_desc": "We provide 24/7 support and monitoring to address any issues or changes that may arise.",
+        "crew_process_step5": "Reporting & Review",
+        "crew_process_step5_desc": "We provide comprehensive reports and review services to ensure continuous improvement.",
+        "crew_cta_title": "Need Crew Management Services?",
+        "crew_cta_desc": "Contact us to discuss how our comprehensive crew management services can support your maritime operations.",
+        "contact_us_btn": "Contact Us",
+        
+        // Crew Management Service Descriptions
+        "crew_visa_desc": "We handle all aspects of visa processing for your crew members, ensuring smooth entry and exit across African countries:",
+        "crew_visa_item1": "Visa application preparation and submission",
+        "crew_visa_item2": "Documentation verification and compliance checks",
+        "crew_visa_item3": "Expedited visa processing for urgent crew changes",
+        "crew_visa_item4": "Work permit coordination for extended stays",
+        "crew_visa_item5": "Visa extensions and amendments as needed",
+        "crew_visa_item6": "Compliance with changing immigration regulations",
+        
+        "crew_transport_desc": "We coordinate all transportation needs for your crew with reliability and comfort as our priorities:",
+        "crew_transport_item1": "Airport transfers with secure, air-conditioned vehicles",
+        "crew_transport_item2": "Port-to-accommodation transportation",
+        "crew_transport_item3": "Services de transport pour rotation d'équipage",
+        "crew_transport_item4": "Assistance de transport d'urgence",
+        "crew_transport_item5": "Transport vers les établissements médicaux en cas de besoin",
+        "crew_transport_item6": "Support de transport 24/7 pour les changements inattendus",
+        
+        "crew_accom_desc": "We arrange quality accommodations that meet your crew's needs and your company's budget:",
+        "crew_accom_item1": "Hotel selection and booking near ports and airports",
+        "crew_accom_item2": "Serviced apartments for extended stays",
+        "crew_accom_item3": "Quality checks to ensure accommodation standards",
+        "crew_accom_item4": "Special dietary requirements coordination",
+        "crew_accom_item5": "Group booking management for larger crews",
+        "crew_accom_item6": "Flexible booking arrangements for changing schedules",
+        
+        "crew_flight_desc": "We handle all flight bookings and logistics to ensure smooth crew rotations:",
+        "crew_flight_item1": "Réservations de vols économiques sur des transporteurs établis",
+        "crew_flight_item2": "Routage optimal pour minimiser les temps de transit",
+        "crew_flight_item3": "Arrangements d'assistance spéciale si nécessaire",
+        "crew_flight_item4": "Coordination des excédents de bagages pour l'équipement d'équipage",
+        "crew_flight_item5": "Gestion des changements et annulations de vols",
+        "crew_flight_item6": "Arrangements de vols d'urgence pendant les perturbations",
+        
+        "crew_port_desc": "Nous fournissons une assistance complète dans les ports et aéroports pour assurer des transitions en douceur:",
+        "crew_port_item1": "Services d'accueil dans les aéroports",
+        "crew_port_item2": "Traitement accéléré de l'immigration lorsque disponible",
+        "crew_port_item3": "Assistance au dédouanement pour les effets personnels",
+        "crew_port_item4": "Coordination d'accès au port et autorisations de sécurité",
+        "crew_port_item5": "Liaison avec les autorités portuaires et aéroportuaires",
+        "crew_port_item6": "Soutien à l'équipage pendant les retards inattendus",
+        
+        // Shipping Support Page
+        "shipping_title": "Shipping Support Services",
+        "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
+        "shipping_services_title": "Our Shipping Support Services",
+        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
+        "shipping_support_title": "Our Support Services",
+        
+        "shipping_port_title": "Port Services",
+        "shipping_port_desc": "Our comprehensive port services include:",
+        "shipping_port_item1": "Cargo handling and stevedoring",
+        "shipping_port_item2": "Ship-to-shore transfers",
+        "shipping_port_item3": "Port agent coordination",
+        "shipping_port_item4": "Berthing arrangements",
+        "shipping_port_item5": "Customs clearance assistance",
+        "shipping_port_item6": "Port security coordination",
+        
+        "shipping_tug_title": "Tugboat Services",
+        "shipping_tug_desc": "We provide reliable tugboat services for:",
+        "shipping_tug_item1": "Ship berthing and unberthing",
+        "shipping_tug_item2": "Harbor towing",
+        "shipping_tug_item3": "Vessel repositioning",
+        "shipping_tug_item4": "Salvage operations",
+        "shipping_tug_item5": "Offshore support",
+        "shipping_tug_item6": "Emergency response",
+        
+        "shipping_accom_title": "Floating Accommodations",
+        "shipping_accom_desc": "Our floating accommodation solutions include:",
+        "shipping_accom_item1": "Fully-equipped accommodation vessels",
+        "shipping_accom_item2": "Temporary living quarters for offshore projects",
+        "shipping_accom_item3": "Catering and hospitality services",
+        "shipping_accom_item4": "Recreation facilities",
+        "shipping_accom_item5": "Medical support services",
+        "shipping_accom_item6": "Communication infrastructure",
+        
+        "shipping_inspect_title": "Marine Inspection Tools",
+        "shipping_inspect_desc": "We provide advanced marine inspection tools and services including:",
+        "shipping_inspect_item1": "Hull inspection equipment",
+        "shipping_inspect_item2": "Underwater inspection drones",
+        "shipping_inspect_item3": "Non-destructive testing equipment",
+        "shipping_inspect_item4": "Condition monitoring systems",
+        "shipping_inspect_item5": "Professional inspection personnel",
+        "shipping_inspect_item6": "Documentation and reporting services",
+        
+        "shipping_benefits_title": "Benefits of Our Shipping Support Services",
+        "shipping_benefit_efficiency": "Improved Operational Efficiency",
+        "shipping_benefit_efficiency_desc": "Our comprehensive support services streamline your maritime operations, reducing downtime and improving overall efficiency.",
+        "shipping_benefit_safety": "Enhanced Safety",
+        "shipping_benefit_safety_desc": "Our professional services and equipment help ensure the safety of your vessels, crew, and cargo.",
+        "shipping_benefit_expertise": "Local Expertise",
+        "shipping_benefit_expertise_desc": "Our deep understanding of African ports and maritime regulations helps navigate complex local requirements.",
+        "shipping_benefit_cost": "Cost-Effective Solutions",
+        "shipping_benefit_cost_desc": "Our integrated services help reduce overall operational costs while maintaining high standards.",
+        
+        "shipping_cta_title": "Need Shipping Support?",
+        "shipping_cta_desc": "Contact our team to discuss how our shipping support services can enhance your maritime operations in Africa.",
+        
+        // Transit Services Page
+        "transit_title": "Transit Services",
+        "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
+        "transit_services_title": "Our Transit Services",
+        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
+        
+        "transit_customs_title": "Customs Clearance Services",
+        "transit_doc_title": "Documentation Management",
+        "transit_doc_desc": "We handle all required documentation for customs clearance, ensuring accuracy and compliance with local regulations:",
+        "transit_doc_item1": "Bills of lading preparation and management",
+        "transit_doc_item2": "Commercial invoice verification",
+        "transit_doc_item3": "Certificate of origin documentation",
+        "transit_doc_item4": "Import/export license coordination",
+        "transit_doc_item5": "Customs declaration forms",
+        
+        "transit_broker_title": "Customs Broker Services",
+        "transit_broker_desc": "Our licensed customs brokers represent your interests and facilitate efficient clearance:",
+        "transit_broker_item1": "Classification of goods for proper tariff applications",
+        "transit_broker_item2": "Duty and tax calculation and payment",
+        "transit_broker_item3": "Liaison with customs officials",
+        "transit_broker_item4": "Regulatory compliance assurance",
+        "transit_broker_item5": "Expedited clearance services",
+        
+        "transit_comply_title": "Regulatory Compliance",
+        "transit_comply_desc": "We ensure your shipments meet all regulatory requirements:",
+        "transit_comply_item1": "Trade compliance audits",
+        "transit_comply_item2": "Regulatory updates and advisory services",
+        "transit_comply_item3": "Specialized permits acquisition",
+        "transit_comply_item4": "Health and safety compliance",
+        "transit_comply_item5": "Environmental regulation adherence",
+        
+        "transit_duty_title": "Duty Optimization",
+        "transit_duty_desc": "We help minimize duty expenses through legal optimization strategies:",
+        "transit_duty_item1": "Tariff classification analysis",
+        "transit_duty_item2": "Free trade agreement utilization",
+        "transit_duty_item3": "Bonded warehouse solutions",
+        "transit_duty_item4": "Duty drawback and recovery services",
+        "transit_duty_item5": "Strategic import planning",
+        
+        "transit_logistics_title": "Transit Logistics",
+        "transit_logistics_desc": "Our transit logistics services provide end-to-end solutions for moving your cargo efficiently through Africa:",
+        "transit_logistics_item1": "<strong>Multi-modal Transportation:</strong> Coordination of sea, air, rail, and road transport for seamless cargo movement",
+        "transit_logistics_item2": "<strong>Route Optimization:</strong> Strategic planning to identify the most efficient and cost-effective transport routes",
+        "transit_logistics_item3": "<strong>Cross-border Management:</strong> Expert handling of border crossings and transit formalities",
+        "transit_logistics_item4": "<strong>Cargo Tracking:</strong> Real-time monitoring and status updates on your shipments",
+        "transit_logistics_item5": "<strong>Risk Management:</strong> Comprehensive strategies to mitigate transit risks and ensure security",
+        
+        "transit_process_title": "Our Transit Logistics Process",
+        "transit_process_step1": "Pre-Transit Planning",
+        "transit_process_step1_desc": "Comprehensive route planning, documentation preparation, and regulatory requirement analysis",
+        "transit_process_step2": "Customs Processing",
+        "transit_process_step2_desc": "Efficient customs clearance at origin, transit points, and destination",
+        "transit_process_step3": "Transport Execution",
+        "transit_process_step3_desc": "Coordinated movement through multiple transport modes and border crossings",
+        "transit_process_step4": "Monitoring & Intervention",
+        "transit_process_step4_desc": "Real-time tracking and proactive issue resolution during transit",
+        "transit_process_step5": "Delivery & Documentation",
+        "transit_process_step5_desc": "Final delivery coordination and comprehensive documentation completion",
+        
+        "transit_regional_title": "Regional Expertise",
+        "transit_regional_desc": "Our transit services are strengthened by our deep regional expertise across Africa:",
+        "transit_regional_item1": "West African customs procedures and regulations",
+        "transit_regional_item2": "East African Community (EAC) customs union protocols",
+        "transit_regional_item3": "Southern African Development Community (SADC) trade agreements",
+        "transit_regional_item4": "North African border and port operations",
+        "transit_regional_item5": "African Continental Free Trade Area (AfCFTA) implementation",
+        "transit_regional_item6": "Country-specific import/export requirements",
+        
+        "transit_cta_title": "Optimisez Vos Opérations de Transit",
+        "transit_cta_desc": "Contactez notre équipe de services de transit pour discuter de la façon dont nous pouvons simplifier votre dédouanement et votre logistique de transit à travers l'Afrique."
+    },
+    
+    // Arabic translations
+    ar: {
+        // Navigation
+        "nav_home": "الرئيسية",
+        "nav_about": "من نحن",
+        "nav_services": "الخدمات",
+        "nav_contact": "اتصل بنا",
+        
+        // Services
+        "service_fuel": "توريد الوقود",
+        "service_shipping": "دعم الشحن",
+        "service_transit": "خدمات العبور",
+        "service_crew": "إدارة الطاقم",
+        "service_personnel": "توفير الأفراد",
+        
+        // Service Descriptions for Homepage Cards
+        "service_fuel_desc": "خدمات تزويد السفن بالوقود المهنية لضمان حصول سفنك على الوقود الذي تحتاجه عند الحاجة إليه.",
+        "service_shipping_desc": "دعم شامل للشحن يشمل خدمات الموانئ، قوارب السحب، أماكن الإقامة العائمة، وأدوات الفحص البحري.",
+        "service_transit_desc": "تبسيط التخليص الجمركي والخدمات اللوجستية للعبور من خلال خبرتنا المتخصصة.",
+        "service_crew_desc": "خدمات شاملة لإدارة الطاقم تشمل التأشيرات، النقل، الإقامة، والمساعدة في الموانئ/المطارات.",
+        "service_personnel_desc": "الوصول إلى ربابنة وأفراد طاقم مؤهلين لضمان سير عملياتك البحرية بسلاسة.",
+        
+        // Hero Section
+        "hero_title": "أفريكا لينك للحلول البحرية واللوجستية",
+        "hero_subtitle": "شريكك الموثوق للدعم البحري واللوجستي الشامل في جميع أنحاء أفريقيا",
+        "hero_cta": "استكشف خدماتنا",
+        
+        // Services Section
+        "services_title": "خدمات الدعم البحري لدينا",
+        "learn_more": "اعرف المزيد",
+        
+        // About Section
+        "about_title": "عن أفريكا لينك",
+        "about_p1": "أفريكا لينك هي مزود موثوق لخدمات الدعم البحري واللوجستي في جميع أنحاء أفريقيا. مع سنوات من الخبرة في الصناعة، نقدم حلولًا شاملة مصممة لتلبية الاحتياجات الفريدة لعملائنا.",
+        "about_p2": "فريقنا من الخبراء مكرس لضمان تشغيل عملياتك البحرية بسلاسة وكفاءة وأمان، مما يتيح لك التركيز على أنشطة عملك الأساسية.",
+        
+        // Contact Section
+        "contact_title": "اتصل بنا",
+        "contact_address": "العنوان:",
+        "contact_phone": "الهاتف:",
+        "contact_email": "البريد الإلكتروني:",
+        "contact_us_btn": "اتصل بنا",
+        
+        // Footer
+        "footer_tagline": "شريكك الموثوق لخدمات الدعم البحري واللوجستي في جميع أنحاء أفريقيا.",
+        "footer_quick_links": "روابط سريعة",
+        "footer_services": "خدماتنا",
+        "footer_copyright": "© 2025 أفريكا لينك. جميع الحقوق محفوظة.",
+        
+        // Fuel Supply Page - complete translations
+        "fuel_service_title": "خدمات توريد الوقود",
+        "fuel_service_subtitle": "خدمات تزويد الوقود المهنية تضمن حصول سفنك على الوقود الذي تحتاجه عندما تحتاجه",
+        "fuel_overview_title": "خدمات التزويد بالوقود لدينا",
+        "fuel_overview_p1": "في أفريكا لينك، ندرك أن إمدادات الوقود الموثوقة أمر حيوي لعملياتك البحرية. خدمات التزويد بالوقود الشاملة لدينا تضمن أن سفنك تتلقى وقودًا عالي الجودة عندما وحيثما تحتاج إليه، مما يقلل من وقت التعطل ويزيد من كفاءة التشغيل.",
+        "fuel_overview_p2": "من خلال شبكتنا الواسعة من الموردين والشركاء اللوجستيين عبر أفريقيا، يمكننا تقديم خدمات تزويد بالوقود في الموانئ الرئيسية والمواقع البحرية، مما يضمن تلبية احتياجاتك من الوقود بغض النظر عن موقع سفينتك.",
+        "key_features": "الميزات الرئيسية",
+        "quality_fuel": "توريد وقود عالي الجودة",
+        "quality_fuel_desc": "نحن نوفر وقود بحري عالي الجودة يلبي المعايير الدولية ويتوافق مع لوائح انبعاثات الكبريت.",
+        "strategic_locations": "مواقع استراتيجية",
+        "strategic_locations_desc": "نقدم خدمات تزويد الوقود في الموانئ الرئيسية والمواقع البحرية في جميع أنحاء أفريقيا.",
+        "timely_delivery": "توصيل في الوقت المناسب",
+        "timely_delivery_desc": "نحن ندرك أهمية الدقة في العمليات البحرية ونضمن تسليم الوقود في الوقت المناسب.",
+        "quality_assurance": "ضمان الجودة",
+        "quality_assurance_desc": "يخضع وقودنا لرقابة جودة صارمة لضمان أنه يلبي مواصفاتك ومعايير الصناعة.",
+        "fuel_types_title": "أنواع الوقود التي نوفرها",
+        "fuel_type_mgo": "<strong>زيت الغاز البحري (MGO)</strong> - وقود مقطر منخفض الكبريت",
+        "fuel_type_mdo": "<strong>زيت الديزل البحري (MDO)</strong> - مزيج من المقطرات وزيوت الوقود الثقيلة",
+        "fuel_type_vlsfo": "<strong>زيت الوقود منخفض الكبريت للغاية (VLSFO)</strong> - متوافق مع لوائح المنظمة البحرية الدولية 2020",
+        "fuel_type_hfo": "<strong>زيت الوقود الثقيل (HFO)</strong> - للسفن المزودة بأنظمة تنقية",
+        "fuel_type_lng": "<strong>الغاز الطبيعي المسال (LNG)</strong> - خيار وقود بديل نظيف",
+        "bunkering_process_title": "عملية التزويد بالوقود لدينا",
+        "bunkering_step1": "<strong>الطلب والتخطيط</strong> - نتلقى متطلبات الوقود الخاصة بك ونقوم بإعداد خطة تسليم مفصلة.",
+        "bunkering_step2": "<strong>التنسيق اللوجستي</strong> - يقوم فريقنا بالتنسيق مع الموردين وسلطات الموانئ لضمان عمليات سلسة.",
+        "bunkering_step3": "<strong>مراقبة الجودة</strong> - نقوم بفحص جودة الوقود قبل التسليم للتأكد من أنه يلبي المواصفات.",
+        "bunkering_step4": "<strong>التسليم</strong> - يتم تسليم الوقود إلى سفينتك في الوقت والمكان المتفق عليهما.",
+        "bunkering_step5": "<strong>التوثيق</strong> - نقدم جميع الوثائق اللازمة لسجلاتك.",
+        "need_bunkering": "هل تحتاج إلى خدمات تزويد الوقود؟",
+        "contact_fuel_desc": "اتصل بنا لمناقشة متطلبات الوقود لسفينتك وكيف يمكننا دعم عملياتك.",
+        
+        // Personnel Provision - Basic Arabic translations
+        "personnel_title": "خدمات توفير الأفراد",
+        "personnel_subtitle": "الوصول إلى قباطنة وأفراد طاقم مؤهلين لضمان سير عملياتك البحرية بسلاسة",
+        "personnel_categories_title": "الأفراد البحريين الذين نوفرهم",
+        "personnel_officers": "الضباط",
+        "personnel_deck": "طاقم السطح",
+        "personnel_engine": "طاقم المحرك",
+        "personnel_hospitality": "طاقم الضيافة",
+        "personnel_specialized": "أفراد متخصصون",
+        "personnel_benefits_title": "فوائد خدمات توفير الأفراد لدينا",
+        "personnel_benefit_qualified": "أفراد مؤهلون",
+        "personnel_benefit_response": "استجابة سريعة",
+        "personnel_benefit_knowledge": "معرفة محلية",
+        "personnel_benefit_flexibility": "المرونة",
+        "recruitment_process_title": "عملية التوظيف لدينا",
+        "personnel_cta_title": "هل تحتاج إلى أفراد بحريين؟",
+        
+        // Transit Services Page - complete Arabic translations
+        "transit_title": "خدمات العبور",
+        "transit_subtitle": "تبسيط التخليص الجمركي ولوجستيات العبور عبر أفريقيا",
+        "transit_services_title": "خدمات العبور لدينا",
+        "transit_overview_p1": "في أفريكا لينك، نتفهم أن التنقل عبر تعقيدات التخليص الجمركي ولوجستيات العبور في أفريقيا يمكن أن يكون صعباً. يقدم فريق خدمات العبور المتخصص لدينا توجيهاً خبيراً وحلولاً شاملة لضمان انتقال شحنتك بسلاسة عبر الحدود وإلى وجهتها النهائية.",
+        "transit_overview_p2": "مع المعرفة الواسعة باللوائح الجمركية الإقليمية والعلاقات القوية مع السلطات المحلية، نساعد في القضاء على التأخير، وتقليل التكاليف، وضمان الامتثال طوال عملية العبور.",
+        
+        "transit_customs_title": "خدمات التخليص الجمركي",
+        "transit_doc_title": "إدارة الوثائق",
+        "transit_doc_desc": "نتعامل مع جميع الوثائق المطلوبة للتخليص الجمركي، مما يضمن الدقة والامتثال للوائح المحلية:",
+        "transit_doc_item1": "إعداد وإدارة بوالص الشحن",
+        "transit_doc_item2": "التحقق من الفواتير التجارية",
+        "transit_doc_item3": "وثائق شهادات المنشأ",
+        "transit_doc_item4": "تنسيق تراخيص الاستيراد/التصدير",
+        "transit_doc_item5": "نماذج الإقرارات الجمركية",
+        
+        "transit_broker_title": "خدمات الوسيط الجمركي",
+        "transit_broker_desc": "يمثل وسطاؤنا الجمركيون المرخصون مصالحك ويسهلون التخليص الفعال:",
+        "transit_broker_item1": "تصنيف البضائع للتطبيقات التعريفية المناسبة",
+        "transit_broker_item2": "حساب ودفع الرسوم والضرائب",
+        "transit_broker_item3": "التواصل مع المسؤولين الجمركيين",
+        "transit_broker_item4": "ضمان الامتثال التنظيمي",
+        "transit_broker_item5": "خدمات التخليص السريع",
+        
+        "transit_comply_title": "الامتثال التنظيمي",
+        "transit_comply_desc": "نضمن أن شحناتك تلبي جميع المتطلبات التنظيمية:",
+        "transit_comply_item1": "تدقيقات الامتثال التجاري",
+        "transit_comply_item2": "تحديثات تنظيمية وخدمات استشارية",
+        "transit_comply_item3": "الحصول على التصاريح المتخصصة",
+        "transit_comply_item4": "الامتثال للصحة والسلامة",
+        "transit_comply_item5": "الالتزام باللوائح البيئية",
+        
+        "transit_duty_title": "تحسين الرسوم الجمركية",
+        "transit_duty_desc": "نساعد في تقليل نفقات الرسوم من خلال استراتيجيات التحسين القانونية:",
+        "transit_duty_item1": "تحليل التصنيف الجمركي",
+        "transit_duty_item2": "الاستفادة من اتفاقيات التجارة الحرة",
+        "transit_duty_item3": "حلول المستودعات الجمركية",
+        "transit_duty_item4": "خدمات استرداد الرسوم واسترجاعها",
+        "transit_duty_item5": "التخطيط الاستراتيجي للاستيراد",
+        
+        "transit_logistics_title": "لوجستيات العبور",
+        "transit_logistics_desc": "توفر خدمات لوجستيات العبور لدينا حلولاً شاملة لنقل شحنتك بكفاءة عبر أفريقيا:",
+        "transit_logistics_item1": "<strong>النقل متعدد الوسائط:</strong> تنسيق النقل البحري والجوي والسكك الحديدية والبري لحركة البضائع بسلاسة",
+        "transit_logistics_item2": "<strong>تحسين المسارات:</strong> التخطيط الاستراتيجي لتحديد طرق النقل الأكثر كفاءة وفعالية من حيث التكلفة",
+        "transit_logistics_item3": "<strong>إدارة عبور الحدود:</strong> التعامل الخبير مع عبور الحدود وإجراءات العبور",
+        "transit_logistics_item4": "<strong>تتبع الشحنات:</strong> المراقبة في الوقت الفعلي وتحديثات الحالة لشحناتك",
+        "transit_logistics_item5": "<strong>إدارة المخاطر:</strong> استراتيجيات شاملة للتخفيف من مخاطر العبور وضمان الأمان",
+        
+        "transit_process_title": "عملية لوجستيات العبور لدينا",
+        "transit_process_step1": "تخطيط ما قبل العبور",
+        "transit_process_step1_desc": "تخطيط شامل للمسارات، وإعداد الوثائق، وتحليل المتطلبات التنظيمية",
+        "transit_process_step2": "المعالجة الجمركية",
+        "transit_process_step2_desc": "تخليص جمركي فعال في المنشأ ونقاط العبور والوجهة",
+        "transit_process_step3": "تنفيذ النقل",
+        "transit_process_step3_desc": "حركة منسقة عبر وسائط نقل متعددة ومعابر حدودية",
+        "transit_process_step4": "المراقبة والتدخل",
+        "transit_process_step4_desc": "التتبع في الوقت الفعلي والحل الاستباقي للمشكلات أثناء العبور",
+        "transit_process_step5": "التسليم والتوثيق",
+        "transit_process_step5_desc": "تنسيق التسليم النهائي وإكمال التوثيق الشامل",
+        
+        "transit_regional_title": "الخبرة الإقليمية",
+        "transit_regional_desc": "تتعزز خدمات العبور لدينا من خلال خبرتنا الإقليمية العميقة عبر أفريقيا:",
+        "transit_regional_item1": "إجراءات ولوائح الجمارك في غرب أفريقيا",
+        "transit_regional_item2": "بروتوكولات الاتحاد الجمركي لمجموعة شرق أفريقيا (EAC)",
+        "transit_regional_item3": "اتفاقيات التجارة لمجموعة تنمية الجنوب الأفريقي (SADC)",
+        "transit_regional_item4": "عمليات الحدود والموانئ في شمال أفريقيا",
+        "transit_regional_item5": "تنفيذ منطقة التجارة الحرة القارية الأفريقية (AfCFTA)",
+        "transit_regional_item6": "متطلبات الاستيراد/التصدير الخاصة بكل بلد",
+        
+        "transit_cta_title": "تحسين عمليات العبور الخاصة بك",
+        "transit_cta_desc": "اتصل بفريق خدمات العبور لدينا لمناقشة كيف يمكننا تبسيط التخليص الجمركي ولوجستيات العبور الخاصة بك عبر أفريقيا.",
+        
+        // Personnel Provision - Basic Arabic translations
+        "personnel_title": "خدمات توفير الأفراد",
+        "personnel_subtitle": "الوصول إلى قباطنة وأفراد طاقم مؤهلين لضمان سير عملياتك البحرية بسلاسة",
+        "personnel_categories_title": "الأفراد البحريين الذين نوفرهم",
+        "personnel_officers": "الضباط",
+        "personnel_deck": "طاقم السطح",
+        "personnel_engine": "طاقم المحرك",
+        "personnel_hospitality": "طاقم الضيافة",
+        "personnel_specialized": "أفراد متخصصون",
+        "personnel_benefits_title": "فوائد خدمات توفير الأفراد لدينا",
+        "personnel_benefit_qualified": "أفراد مؤهلون",
+        "personnel_benefit_response": "استجابة سريعة",
+        "personnel_benefit_knowledge": "معرفة محلية",
+        "personnel_benefit_flexibility": "المرونة",
+        "recruitment_process_title": "عملية التوظيف لدينا",
+        "personnel_cta_title": "هل تحتاج إلى أفراد بحريين؟",
+        
+        // Crew Management Page - complete Arabic translations
+        "crew_service_title": "خدمات إدارة الطاقم",
+        "crew_service_subtitle": "إدارة شاملة للطاقم تشمل التأشيرات، النقل، الإقامة، الرحلات الجوية، والمساعدة في الموانئ/المطارات",
+        "crew_overview_title": "خدمات إدارة الطاقم لدينا",
+        "crew_overview_p1": "في أفريكا لينك، ندرك أن الإدارة الفعالة والكفؤة للطاقم أمر ضروري لنجاح العمليات البحرية. تم تصميم خدماتنا الشاملة لإدارة الطاقم للتعامل مع جميع جوانب لوجستيات الطاقم، مما يضمن رعاية أفراد طاقمك بشكل جيد ويمكنهم من التركيز على مسؤولياتهم الأساسية.",
+        "crew_overview_p2": "من معالجة التأشيرات والنقل إلى الإقامة والمساعدة في الموانئ، يوفر فريقنا المتخصص حلول إدارة طاقم متكاملة مصممة خصيصًا لتلبية احتياجاتك المحددة، مما يتيح لك التركيز على عملياتك الأساسية.",
+        "crew_services_title": "خدماتنا الشاملة",
+        "crew_visa_title": "خدمات التأشيرات",
+        "crew_visa_desc": "نتعامل مع جميع جوانب معالجة التأشيرات لأفراد طاقمك، مما يضمن دخول وخروج سلس عبر البلدان الأفريقية:",
+        "crew_visa_item1": "إعداد وتقديم طلبات التأشيرة",
+        "crew_visa_item2": "التحقق من الوثائق وفحوصات الامتثال",
+        "crew_visa_item3": "معالجة سريعة للتأشيرات لتغييرات الطاقم العاجلة",
+        "crew_visa_item4": "تنسيق تصاريح العمل للإقامات الطويلة",
+        "crew_visa_item5": "تمديدات وتعديلات التأشيرة حسب الحاجة",
+        "crew_visa_item6": "الامتثال للوائح الهجرة المتغيرة",
+        
+        "crew_transport_title": "النقل",
+        "crew_transport_desc": "ننسق جميع احتياجات النقل لطاقمك مع وضع الموثوقية والراحة كأولوياتنا:",
+        "crew_transport_item1": "خدمات النقل من المطار بسيارات آمنة ومكيفة",
+        "crew_transport_item2": "النقل من الميناء إلى مكان الإقامة",
+        "crew_transport_item3": "خدمات نقل لتناوب الطاقم",
+        "crew_transport_item4": "مساعدة النقل في حالات الطوارئ",
+        "crew_transport_item5": "النقل إلى المرافق الطبية عند الحاجة",
+        "crew_transport_item6": "دعم النقل على مدار الساعة للتغييرات غير المتوقعة",
+        
+        "crew_accom_title": "أماكن الإقامة",
+        "crew_accom_desc": "نرتب أماكن إقامة ذات جودة تلبي احتياجات طاقمك وميزانية شركتك:",
+        "crew_accom_item1": "اختيار وحجز الفنادق بالقرب من الموانئ والمطارات",
+        "crew_accom_item2": "شقق مخدومة للإقامات الطويلة",
+        "crew_accom_item3": "فحوصات الجودة لضمان معايير الإقامة",
+        "crew_accom_item4": "تنسيق متطلبات النظام الغذائي الخاص",
+        "crew_accom_item5": "إدارة الحجوزات الجماعية للطواقم الكبيرة",
+        "crew_accom_item6": "ترتيبات حجز مرنة للجداول المتغيرة",
+        
+        "crew_flight_title": "ترتيبات الرحلات الجوية",
+        "crew_flight_desc": "نتعامل مع جميع حجوزات الرحلات والخدمات اللوجستية لضمان تناوب سلس للطاقم:",
+        "crew_flight_item1": "حجوزات رحلات اقتصادية على شركات طيران معتمدة",
+        "crew_flight_item2": "المسار الأمثل لتقليل أوقات العبور",
+        "crew_flight_item3": "ترتيبات المساعدة الخاصة عند الحاجة",
+        "crew_flight_item4": "تنسيق الأمتعة الزائدة لمعدات الطاقم",
+        "crew_flight_item5": "إدارة تغيير وإلغاء الرحلات الجوية",
+        "crew_flight_item6": "ترتيبات رحلات الطوارئ خلال الاضطرابات",
+        
+        "crew_port_title": "المساعدة في الموانئ/المطارات",
+        "crew_port_desc": "نقدم مساعدة شاملة في الموانئ والمطارات لضمان انتقالات سلسة:",
+        "crew_port_item1": "خدمات الاستقبال في المطارات",
+        "crew_port_item2": "تسريع إجراءات الهجرة عندما يكون متاحاً",
+        "crew_port_item3": "المساعدة في التخليص الجمركي للأمتعة الشخصية",
+        "crew_port_item4": "تنسيق الوصول إلى الميناء وتصاريح الأمن",
+        "crew_port_item5": "التواصل مع سلطات الموانئ والمطارات",
+        "crew_port_item6": "دعم الطاقم خلال التأخيرات غير المتوقعة",
+        
+        "crew_benefits_title": "فوائد خدمات إدارة الطاقم لدينا",
+        "crew_benefit_time": "كفاءة الوقت",
+        "crew_benefit_time_desc": "إن تعهيد إدارة الطاقم إلى أفريكا لينك يوفر وقتاً ثميناً لفريق العمليات الخاص بك، مما يتيح لهم التركيز على أنشطة العمل الأساسية بينما نتعامل نحن مع الخدمات اللوجستية.",
+        "crew_benefit_cost": "تحسين التكلفة",
+        "crew_benefit_cost_desc": "تتيح لنا شبكتنا الراسخة وعلاقاتنا القائمة على الحجم مع مقدمي الخدمات الحصول على أسعار تفضيلية، مما يساعد على تقليل تكاليف إدارة الطاقم الإجمالية.",
+        "crew_benefit_compliance": "الامتثال التنظيمي",
+        "crew_benefit_compliance_desc": "نواكب التغييرات في لوائح الهجرة والبحرية عبر البلدان الأفريقية، مما يضمن بقاء عمليات طاقمك متوافقة دائماً مع القوانين المحلية.",
+        "crew_benefit_local": "الخبرة المحلية",
+        "crew_benefit_local_desc": "فهمنا العميق للظروف والعادات والممارسات المحلية في البلدان الأفريقية يساعد في التنقل عبر الفروق الثقافية وضمان عمليات سلسة للطاقم.",
+        
+        "crew_process_title": "عملية إدارة الطاقم لدينا",
+        "crew_process_step1": "تقييم المتطلبات",
+        "crew_process_step1_desc": "نعمل معك لفهم احتياجاتك ومتطلباتك المحددة لإدارة الطاقم.",
+        "crew_process_step2": "التخطيط والتنسيق",
+        "crew_process_step2_desc": "نطور خطة مفصلة وننسق جميع الخدمات والترتيبات اللازمة.",
+        "crew_process_step3": "التنفيذ",
+        "crew_process_step3_desc": "ننفذ جميع الترتيبات، مما يضمن تناوبات سلسة للطاقم والخدمات اللوجستية.",
+        "crew_process_step4": "المراقبة والدعم",
+        "crew_process_step4_desc": "نقدم الدعم والمراقبة على مدار الساعة لمعالجة أي مشاكل أو تغييرات قد تنشأ.",
+        "crew_process_step5": "إعداد التقارير والمراجعة",
+        "crew_process_step5_desc": "نقدم تقارير شاملة وخدمات مراجعة لضمان التحسين المستمر.",
+        
+        "crew_cta_title": "هل تحتاج إلى خدمات إدارة الطاقم؟",
+        "crew_cta_desc": "اتصل بنا لمناقشة كيف يمكن لخدمات إدارة الطاقم الشاملة لدينا دعم عملياتك البحرية."
+    }
+};
+
+// Current language (default to English)
+let currentLanguage = 'en';
+
+// Function to translate the page
+function translatePage(lang) {
+    // Update current language
+    currentLanguage = lang;
+    
+    // Save language preference to localStorage
+    localStorage.setItem('africalink_language', lang);
+    
+    // Update the language selector display
+    document.querySelector('#languageDropdown').innerHTML = `<i class="bi bi-globe"></i> ${lang.toUpperCase()}`;
+    
+    // Mark the active language in the dropdown
+    const languageItems = document.querySelectorAll('[data-lang]');
+    languageItems.forEach(item => {
+        if (item.getAttribute('data-lang') === lang) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Get translation object for selected language
+    const translation = translations[lang];
+    if (!translation) return; // If translation doesn't exist, exit
+    
+    // Translate all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translation[key]) {
+            element.innerHTML = translation[key];
+        }
+    });
+    
+    // For elements that need attributes translated (like placeholders)
+    document.querySelectorAll('[data-i18n-attr]').forEach(element => {
+        const data = element.getAttribute('data-i18n-attr').split(',');
+        const key = data[0];
+        const attr = data[1];
+        
+        if (translation[key]) {
+            element.setAttribute(attr, translation[key]);
+        }
+    });
+    
+    // Special handling for RTL languages like Arabic
+    if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.body.classList.add('rtl');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.classList.remove('rtl');
+    }
+}
+
+// Initialize translation functionality when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if user has previously selected a language
+    const savedLanguage = localStorage.getItem('africalink_language');
+    if (savedLanguage) {
+        translatePage(savedLanguage);
+    }
+    
+    // Add event listeners to language selector links
+    document.querySelectorAll('[data-lang]').forEach(element => {
+        element.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            translatePage(lang);
+        });
+    });
+}); 

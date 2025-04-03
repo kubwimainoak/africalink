@@ -1,0 +1,151 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Project Requirements Document
+
+## 1. Project Overview
+
+Africa Link is a website built for a company that provides comprehensive maritime and logistics support services for offshore and port-based operations. The site will serve as an informational resource that clearly outlines how Africa Link assists with fuel supply (bunkering), shipping support, transit services, crew management, and personnel provision. By presenting detailed service information, prospective clients will have a clear understanding of the company’s offerings while reinforcing Africa Link’s strong brand identity using its signature shades of orange and black and existing logo.
+
+The website is being built to enhance the company's online visibility and to provide clients with essential details about robust maritime support solutions. The primary objectives are to inform potential clients about all service offerings and to offer an intuitive navigation experience that reflects the company’s professionalism. Success will be measured by clear communication of service details, ease of use, and consistency in delivering the company's branding and message.
+
+## 2. In-Scope vs. Out-of-Scope
+
+### In-Scope
+
+*   A fully responsive informational website
+
+*   A visually striking homepage with a header that prominently features the Africa Link logo and color scheme (orange and black)
+
+*   Clear and concise navigation (top menu with Home, About Us, Services, Contact)
+
+*   Dedicated service pages for:
+
+    *   Fuel Supply (Bunkering)
+    *   Shipping Support (port, tugboats, floating accommodations, marine inspection tools)
+    *   Transit Services (customs and transit logistics)
+    *   Crew Management (covering visas, transportation, accommodations, flights, port/airport assistance)
+    *   Personnel Provision (hiring qualified captains and crew members)
+
+*   A consistent footer featuring supplementary navigation links, contact details, and disclaimers
+
+*   Use of high-quality images and intuitive icons to visually support maritime operations
+
+### Out-of-Scope
+
+*   Any interactive features like contact forms, online booking, or quote request forms
+*   A client portal or login area for managing engagements
+*   Advanced functionalities such as real-time chat or complex animations
+
+## 3. User Flow
+
+A typical user journey starts with a new visitor landing on the homepage, where the striking header, company logo, and clear tagline immediately present Africa Link’s commitment to streamlined maritime operations. From the homepage, users can quickly understand the company’s expertise and get a general sense of the informational content. The top navigation bar allows them to easily move between sections such as Home, About Us, Services, and Contact.
+
+After exploring the homepage, users typically click on the Services tab to delve into detailed explanations of each maritime support service. They can read about the specifics of Fuel Supply, Shipping Support, Transit Services, Crew Management, and Personnel Provision in dedicated sections. Throughout their journey, high-quality visuals, consistent branding, and accessible navigation ensure that clients find all necessary information quickly and without any confusion, reinforcing Africa Link's professional image in the maritime and logistics industry.
+
+## 4. Core Features
+
+*   **Informational Homepage:**
+
+    *   Features the Africa Link logo and a concise tagline
+    *   Uses the company’s orange and black color scheme for visual consistency
+
+*   **Clear Navigation:**
+
+    *   Top menu with links to Home, About Us, Services, and Contact
+    *   Consistent footer with extra navigation and contact information
+
+*   **Dedicated Service Pages:**
+
+    *   Separate sections for Fuel Supply (Bunkering), Shipping Support, Transit Services, Crew Management, and Personnel Provision
+    *   Detailed descriptions of each service, explaining benefits and logistical expertise
+
+*   **Visual and Design Elements:**
+
+    *   High-quality images and maritime-themed icons
+    *   Clear headings and brief paragraphs for easy readability
+
+*   **Responsive and Professional Design:**
+
+    *   Mobile-friendly layout ensuring accessibility across devices
+    *   Consistent application of branding guidelines
+
+## 5. Tech Stack & Tools
+
+*   **Frontend Technologies:**
+
+    *   HTML for structure
+    *   CSS for styling, with emphasis on the company color scheme (shades of orange and black)
+    *   JavaScript for any light interactivity or enhancements (if needed)
+    *   Bootstrap for a responsive and modern design framework
+
+*   **Development Tools:**
+
+    *   Cursor for advanced IDE support with AI-powered coding suggestions to ensure timely and efficient development
+
+*   **Additional Considerations:**
+
+    *   No backend frameworks or databases are required since the website is strictly informational
+    *   No need for any AI models or libraries in the initial version
+
+## 6. Non-Functional Requirements
+
+*   **Performance:**
+
+    *   Fast load times across devices (aiming for under 3 seconds per page)
+    *   Optimized images and clean code to ensure smooth performance
+
+*   **Security:**
+
+    *   Standard web security practices (HTTPS deployment, secure hosting)
+    *   No sensitive data handling is needed due to the informational nature of the site
+
+*   **Usability:**
+
+    *   Intuitive and user-friendly navigation
+    *   Clear and readable content layout with responsive design for mobile and desktop viewing
+
+*   **Compliance:**
+
+    *   Ensure compliance with web standards and accessibility guidelines (e.g., WCAG for accessibility)
+
+## 7. Constraints & Assumptions
+
+*   **Constraints:**
+
+    *   Limited to an informational website with no interactive or transactional features
+    *   The website must adhere to the existing branding guidelines (logo, orange and black color scheme)
+
+*   **Assumptions:**
+
+    *   The current branding assets are readily available and will be provided
+    *   The target client audience is already familiar with basic web navigation and expects a professional-looking presentation
+    *   The development environment supports HTML, CSS, JavaScript, and Bootstrap without compatibility issues
+
+## 8. Known Issues & Potential Pitfalls
+
+*   **Browser Compatibility:**
+
+    *   Ensure thorough testing across various web browsers and devices to avoid design inconsistencies
+    *   Mitigation: Utilize Bootstrap’s responsive design features to aid cross-browser compatibility
+
+*   **Performance Optimization:**
+
+    *   Large image files or heavy styling might slow down load times
+    *   Mitigation: Optimize images and ensure code is clean, minimizing unnecessary scripts or styles
+
+*   **Brand Consistency:**
+
+    *   Maintaining strict adherence to the branding could be challenging if assets are not provided in a timely manner
+    *   Mitigation: Confirm all branding materials upfront and adjust design components to strictly follow guidelines
+
+*   **Content Clarity:**
+
+    *   Overloading pages with too much information could detract from readability
+    *   Mitigation: Keep individual service pages concise and focused, using clear headings and short paragraphs to communicate essential information
+
+This document provides a comprehensive overview and clear guidelines for building the Africa Link informational website. It covers every necessary detail so that subsequent technical documents and implementation plans can be developed with clarity and precision.

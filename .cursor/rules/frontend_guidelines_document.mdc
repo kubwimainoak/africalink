@@ -1,0 +1,127 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Africa Link Frontend Guideline Document
+
+This document provides a clear and comprehensive overview of the frontend architecture, design principles, and technologies used for the Africa Link website. The aim is to ensure that even non-technical readers understand how the website is set up, its styling guidelines, component structure, and more. Below you will find detailed guidelines arranged by key focus areas.
+
+## Frontend Architecture
+
+The Africa Link website is a modern, informational website that presents data about maritime and logistics support services. Here’s a look at the overall structure:
+
+- **Frameworks & Libraries:**
+  - The structure is built using standard HTML for the foundation, CSS for styling, and JavaScript for any light enhancements.
+  - Bootstrap is used for its powerful responsive design framework to ensure the site works beautifully on any device.
+
+- **Backend Support:**
+  - While the website primarily serves static content, a lightweight Node.js based server can be introduced if needed for enhanced functionality or dynamic content handling.
+
+- **Scalability & Maintainability:**
+  - The architecture is simple and focused on performance, ensuring fast load times (typically under 3 seconds) and ensuring updates can be easily propagated by maintaining clean code and clear documentation.
+  - Utilizing Git for version control ensures code changes are tracked and collaboratively managed, thereby enhancing maintainability.
+
+## Design Principles
+
+The design of the Africa Link website is driven by principles that ensure usability and clear communication of essential services:
+
+- **Usability:**
+  - The website employs intuitive navigation and clear headings to help users quickly locate information regarding services such as Fuel Supply, Shipping Support, and more.
+
+- **Accessibility:**
+  - High contrast colors and legible typography are applied to meet accessibility standards (WCAG compliant), ensuring that everyone, including people with disabilities, can interact with the site.
+
+- **Responsiveness:**
+  - The design is responsive and adapts seamlessly to desktops, tablets, and mobile devices. Bootstrap plays a big role here, making sure components adjust fluidly to varying screen sizes.
+
+## Styling and Theming
+
+A consistent visual language has been established to match the professional nature and maritime focus of Africa Link:
+
+- **CSS Methodology & Frameworks:**
+  - The styling is managed using CSS, supported by the Bootstrap framework. For a consistent structure, methodologies like BEM or SMACSS have been considered to ensure styles remain modular and manageable.
+
+- **Preprocessors:**
+  - While this document describes mainly vanilla CSS usage for simplicity, the project can easily incorporate preprocessors like SASS if more advanced styling features are required in the future.
+
+- **Theming:**
+  - Africa Link follows an orange and black color scheme to align with the brand identity. This ensures that every page carries the same look and feel throughout the website.
+
+- **Design Style:**
+  - The visual design is modern and clean, leaning towards a minimalistic, flat design approach that reflects professionalism.
+
+- **Color Palette:**
+  - Primary Color: Orange (to evoke energy and confidence)
+  - Secondary Color: Black (for sophistication and contrast)
+  - Additional colors: Shades of gray to balance content areas and white for backgrounds to keep text legible and clear.
+
+- **Typography:**
+  - Clear, legible fonts are used throughout. Sans-serif fonts such as Arial, Helvetica, or similar modern typefaces are recommended to complement the clean design.
+
+## Component Structure
+
+The frontend is organized with a component-based approach that emphasizes reusability and easy maintenance:
+
+- **Component Organization:**
+  - Components are arranged based on functionality (for example, separate headers, footers, content blocks, and navigation menus).
+  - Each component is designed to be independent so that any UI element can be reused on multiple pages without code duplication.
+
+- **Benefits:**
+  - This modular structure makes it easier to manage code updates and allows developers to analyze and extend the application without hassle.
+
+## State Management
+
+Even though this is an informational website, a thoughtful approach to state management is considered to enhance performance and future scalability:
+
+- **State Handling:**
+  - For any JavaScript-driven interactivity (such as menu toggling or light animations), state is kept local to the component unless it needs to be shared across multiple components.
+
+- **Option for Scaling:**
+  - Should the project grow to require more dynamic content or interactions, small, focused state management libraries or simple context patterns can be introduced incrementally.
+
+## Routing and Navigation
+
+Navigating the Africa Link website is straightforward with a clearly defined structure:
+
+- **Routing Libraries:**
+  - As a static informational website, routing is managed through simple URL navigation. If JavaScript routing is needed later, libraries like React Router (for React-based setups) or similar can be integrated.
+
+- **Navigation Structure:**
+  - The homepage features a logo, tagline, and main navigation menu, leading to primary sections such as Home, About Us, Services, and Contact pages.
+  - The Services page breaks down key service offerings into dedicated sections for Fuel Supply, Shipping Support, Transit Services, Crew Management, and Personnel Provision.
+  - A footer provides supplementary navigation along with contact details and disclaimers.
+
+## Performance Optimization
+
+To ensure a smooth and responsive user experience, various performance techniques are employed:
+
+- **Strategies:**
+  - Lazy loading of images and assets to decrease initial load times.
+  - Code splitting to ensure that only the necessary code is loaded on demand.
+  - Asset optimization through image compression and minification of CSS and JavaScript files.
+
+- **Outcomes:**
+  - These measures not only reduce overall load times but also make the site more responsive and user-friendly.
+
+## Testing and Quality Assurance
+
+Quality assurance is a priority to ensure consistency and reliability across the Africa Link website:
+
+- **Testing Strategies:**
+  - Unit Testing: Individual components are tested for functionality.
+  - Integration Testing: Combined components are tested together to ensure they interact properly.
+  - End-to-End Testing: The entire user flow is simulated to verify that the website behaves as expected.
+
+- **Tools & Frameworks:**
+  - Tools such as Jest for JavaScript testing and testing libraries relevant to the frontend framework in use (or simply browser-based testing for static setups) are employed.
+
+## Conclusion and Overall Frontend Summary
+
+The Africa Link frontend is designed to be a modern, efficient, and accessible resource for clients in the maritime and logistics fields. Leveraging HTML, CSS, JavaScript, and Bootstrap, the site ensures a consistent and professional presentation that aligns with the provided branding of orange and black. The component-based architecture, coupled with careful state management and performance optimization strategies, guarantees a seamless user experience.
+
+By adhering to these guidelines, Africa Link’s frontend will remain maintainable, scalable, and fully aligned with its objectives—delivering essential, high-quality service information with clarity and ease.
+
+This document serves as a roadmap for developers and stakeholders, ensuring everyone involved understands the design decisions and technical underpinnings of the website.

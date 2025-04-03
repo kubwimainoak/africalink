@@ -1,0 +1,80 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Tech Stack Document
+
+This document explains the different technologies we will be using for the Africa Link website. The aim is to build a clean, engaging, and informative website that clearly presents your maritime and logistics services without overwhelming the visitors.
+
+## Frontend Technologies
+
+For the frontend (what users see and interact with), we chose technologies that help us deliver a fast, responsive, and aesthetically pleasing website. Here are our choices:
+
+*   **HTML**: The backbone of your website. It structures the content so that all the information about your services is clearly laid out.
+*   **CSS**: This handles the styling and design, ensuring that your website reflects Africa Link’s brand, particularly through the use of your chosen shades of orange and black.
+*   **JavaScript**: Although the website is informational and does not require heavy interaction, JavaScript is used for minor enhancements and making the site more dynamic (like smooth scrolling or simple animations).
+*   **Bootstrap**: A popular framework that provides ready-to-use code components. It speeds up development and ensures that the website is responsive (adjusts well on mobile devices as well as desktops).
+
+These choices help create an attractive and easy-to-navigate website that reflects your brand’s professionalism in maritime and logistics support.
+
+## Backend Technologies
+
+Even though the Africa Link website is primarily for providing information, some backend components ensure that the website remains efficient and secure. The backend handles processes that are not visible to users but are essential for website management:
+
+*   **Static Content Hosting**: Since the website is informational and doesn’t require extensive user interaction, it will mostly serve static pages. This means the content is pre-built and delivered quickly to viewers.
+*   **Lightweight Server Framework (if needed)**: In case of future needs such as simple contact submissions or content updates, a lightweight framework (possibly Node.js based) could be integrated to handle basic tasks.
+*   **APIs and Data Management**: Although there are no heavy interactive features, APIs can be used if later enhancements are required, such as integrating real-time maritime news or service updates.
+
+These backend choices keep the website fast and highly reliable, without adding unnecessary complexity.
+
+## Infrastructure and Deployment
+
+The infrastructure ensures that the website is hosted securely and can be updated easily. Here are our main choices:
+
+*   **Hosting Platforms**: We plan to use a reliable hosting service (such as Netlify, Vercel, or similar) for static websites. This guarantees quick load times and a secure connection for all visitors.
+*   **CI/CD Pipelines**: Continuous Integration and Continuous Deployment tools will be used so that any updates to the website can be automatically tested and deployed, reducing downtime and ensuring that the site stays current.
+*   **Version Control Systems**: Tools like Git (with platforms such as GitHub or GitLab) will manage code versions, enabling the team to collaborate efficiently and track changes easily.
+
+These decisions help guarantee that the website is not only reliable and secure but also scalable for any future updates or expansions.
+
+## Third-Party Integrations
+
+While the primary focus of the website is informational, there are a few valuable third-party tools that can enhance its functionality:
+
+*   **Analytics Tools**: Services like Google Analytics can be integrated to help monitor website traffic and visitor behavior. This insight can inform future improvements.
+*   **Cursor**: The project will leverage advanced IDE tools like Cursor, which offers AI-powered coding suggestions and feedback, streamlining the development process and reducing errors.
+
+These integrations add extra value without complicating the website’s primary goal of delivering clear, focused information.
+
+## Security and Performance Considerations
+
+Even for an informational website, security and smooth performance are very important. Here’s how we address these concerns:
+
+*   **Security Measures**:
+
+    *   Use of HTTPS to ensure that data transmitted between the user and the server is encrypted.
+    *   Regular updates and patches for any libraries or frameworks used, ensuring that security is always up to date.
+    *   Implementation of secure hosting practices to protect the website from potential vulnerabilities.
+
+*   **Performance Optimizations**:
+
+    *   Minification of CSS and JavaScript files to speed up the website load times.
+    *   Use of a Content Delivery Network (CDN) to deliver static content swiftly across various geographic locations.
+    *   Optimizing images and using responsive design techniques to ensure smooth operation on both desktops and mobile devices.
+
+These measures safeguard the website and help ensure that prospective clients can access and navigate it quickly and securely.
+
+## Conclusion and Overall Tech Stack Summary
+
+To sum it up, here’s why each technology was chosen and how they work together to support the Africa Link website:
+
+*   **Frontend**: HTML, CSS, JavaScript, and Bootstrap create a clean, responsive, and attractive interface, reinforcing your brand’s identity with the use of your signature colors.
+*   **Backend**: Minimal necessary backend components are used to ensure that static content loads quickly, with room for future enhancements if needed.
+*   **Infrastructure and Deployment**: Reliable hosting, automated deployment pipelines, and version control ensure that the website is robust, secure, and easy to update.
+*   **Third-Party Integrations**: Tools like Google Analytics and advanced coding aids such as Cursor further enhance the overall functionality and development process.
+*   **Security and Performance**: Key measures are in place to protect the website while ensuring it remains fast and accessible.
+
+These technology choices are aligned with the project's goals—to provide a straightforward, high-quality informational website that communicates Africa Link’s comprehensive maritime and logistics services effectively to its potential clients. The tech stack is designed to be simple yet scalable, ensuring that the website is both reliable today and ready for future growth and enhancements.

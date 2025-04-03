@@ -1,0 +1,482 @@
+/* Main CSS for Africa Link Website
+   Using the company's signature colors (orange and black) */
+
+:root {
+    /* Brand colors */
+    --primary: #FF7700; /* Primary orange */
+    --primary-dark: #E66000; /* Darker orange for hover states */
+    --secondary: #FF9933; /* Secondary, lighter orange */
+    --dark: #1A1A1A; /* Almost black */
+    --light: #F8F9FA; /* Light background */
+    --text-dark: #333333; /* Dark text */
+    --text-light: #FFFFFF; /* Light text */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Specific heading styles */
+h3 {
+    color: var(--primary);
+}
+
+h4 {
+    color: var(--text-dark);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text-light);
+}
+
+/* Header Styles - Updated for white background */
+.header {
+    background-color: white;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light {
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1030;
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.dropdown-item.active {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+/* Fix for dropdown toggle behavior */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Desktop dropdown hover enhancement */
+@media (min-width: 993px) {
+    /* Close the bridge gap for mobile */
+    .dropdown-menu {
+        display: none;
+        transition: visibility 0.2s, opacity 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .nav-item.dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    padding: 7.2rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Services Section */
+.services {
+    padding: 5rem 0;
+}
+
+.services h2 {
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .card-title {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: var(--light);
+    padding: 5rem 0;
+}
+
+.about-us h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 0;
+}
+
+.contact h2 {
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--text-light);
+    padding: 3rem 0 2rem;
+}
+
+.footer h5 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: var(--text-light);
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0.75rem 0;
+    }
+    
+    .navbar-nav {
+        padding-top: 0.5rem;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+    
+    .dropdown-menu {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        border: none;
+        box-shadow: none;
+        padding-left: 1.5rem;
+        position: static;
+        float: none;
+        width: 100%;
+        display: none;
+        max-height: none;
+        overflow: visible;
+    }
+    
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 60px;
+    }
+    
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .services, .about-us, .contact {
+        padding: 3rem 0;
+    }
+    
+    .service-details {
+        padding: 2rem 0;
+    }
+    
+    .footer {
+        padding: 2rem 0 1.5rem;
+    }
+    
+    .footer h5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        height: 50px;
+    }
+    
+    .header {
+        padding: 0.25rem 0;
+    }
+    
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero .lead {
+        font-size: 1rem;
+    }
+    
+    .services h2, .about-us h2, .contact h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    
+    .service-card {
+        padding: 1.25rem;
+    }
+    
+    .service-header {
+        padding: 2rem 0 !important;
+    }
+}
+
+/* Fix for mobile navigation */
+.navbar-collapse {
+    max-height: none;
+    overflow-y: visible;
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu {
+        margin-top: 0;
+        border: none;
+        box-shadow: none;
+        padding-left: 1.5rem;
+        position: static;
+        float: none;
+        width: 100%;
+        display: none;
+        max-height: none;
+        overflow: visible;
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 0;
+        white-space: normal;
+    }
+    
+    .dropdown-item.active {
+        background-color: transparent;
+        color: var(--primary);
+    }
+    
+    /* Fix for mobile dropdown */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .nav-item.dropdown.show .dropdown-menu {
+        display: block;
+    }
+    
+    /* Ensure the navbar expands properly */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1rem;
+        z-index: 1040;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 576px) {
+        .navbar-collapse {
+            padding: 1rem 1.25rem;
+        }
+    }
+}
+
+/* Create bridge to prevent dropdown from disappearing */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown:after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+}
+
+/* RTL Support for Arabic Language */
+html[dir="rtl"] body {
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Droid Arabic Kufi', sans-serif;
+}
+
+html[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+html[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+html[dir="rtl"] .dropdown-menu {
+    text-align: right;
+}
+
+html[dir="rtl"] .dropdown-item {
+    text-align: right;
+}
+
+html[dir="rtl"] .feature-item {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .feature-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+html[dir="rtl"] .me-3 {
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+}
+
+html[dir="rtl"] ul, html[dir="rtl"] ol {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .text-center {
+    text-align: center !important;
+}
+
+/* Fix for dropdown menus in RTL */
+html[dir="rtl"] .dropdown-menu-end {
+    right: auto;
+    left: 0;
+}
+
+/* Mobile RTL fixes */
+@media (max-width: 992px) {
+    html[dir="rtl"] .dropdown-menu {
+        padding-left: 0;
+        padding-right: 1.5rem;
+    }
+    
+    html[dir="rtl"] .navbar-collapse {
+        left: 0;
+        right: 0;
+    }
+} 

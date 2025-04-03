@@ -1,0 +1,21 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+flowchart TD
+    A[Gather Project Requirements]
+    A --> B[Define Project Overview: Africa Link website]
+    B --> C[Design Branding: Logo, shades of orange and black]
+    C --> D[Plan Frontend: HTML, CSS, JavaScript, Bootstrap]
+    D --> E[Plan Backend: Static content hosting]
+    E --> F[Set Infrastructure: Netlify/Vercel and Git]
+    F --> G[Develop Homepage: Logo and tagline]
+    G --> H[Implement Navigation: Home, About Us, Services, Contact]
+    H --> I[Create Service Pages: Fuel Supply, Shipping Support, Transit Services, Crew Management, Personnel Provision]
+    I --> J[Ensure Responsive Design and Performance]
+    J --> K[Implement Security: HTTPS and secure hosting]
+    K --> L[Test Browser Compatibility]
+    L --> M[Deploy and Host Website]

@@ -1,0 +1,91 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Implementation plan
+
+## Phase 1: Environment Setup
+
+1. **Prevalidation:** Check if the current directory already contains project files such as `index.html` or a Git repository. If found, skip project initialization. *(PRD: Project Overview)*
+2. **Directory Structure:** Create the following directory structure if not already present:
+   - `/assets` for images and logo
+   - `/css` for styling files
+   - `/js` for any JavaScript enhancements
+   - `/pages` for individual service pages
+   *(Tech Stack: Frontend)*
+3. **Git Initialization:** If not already initialized, run `git init` to create a Git repository in the project root. *(Tech Stack: Dev Tools)*
+4. **Cursor Environment Setup:**
+   - Check if a `.cursor` directory exists in the project root. If not, create it.
+   - Create a file `.cursor/mcp.json` if it does not exist.
+   - Since this is a static website with no database backend (no Supabase needed), use a placeholder configuration in `.cursor/mcp.json` for future use. For example:
+     ```json
+     { "mcpServers": {} }
+     ```
+   *(Tech Stack: Dev Tools)*
+
+## Phase 2: Frontend Development
+
+5. **Create Homepage:** Create `index.html` in the project root. This page should include the following elements:
+   - A header with the Africa Link logo found in `/assets`.
+   - Navigation links to each service page (Fuel Supply, Shipping Support, Transit Services, Crew Management, Personnel Provision).
+   - A hero section with messaging about maritime and logistics support.
+   - Use the Bootstrap CDN for responsive design and include a link to the external Bootstrap CSS. *(PRD: Branding; App Flow: Homepage)*
+6. **Header & Navigation Styling:** Create `/css/main.css` to define custom styles using the shades of orange and black per branding. Link this file in `index.html`. *(PRD: Branding)*
+7. **Service Pages Setup:** Create individual HTML pages within the `/pages` directory:
+   - `/pages/fuel-supply.html` (Fuel Supply – Bunkering)
+   - `/pages/shipping-support.html` (Shipping Support – port, tugboats, floating accommodations, marine inspection tools)
+   - `/pages/transit-services.html` (Transit Services – customs and transit logistics)
+   - `/pages/crew-management.html` (Crew Management – visas, transportation, accommodations, flights, port/airport assistance)
+   - `/pages/personnel-provision.html` (Personnel Provision – hiring qualified captains and crew members)
+   Each page should have a header consistent with the homepage and content details about the respective service. *(PRD: Functionality; App Flow: Page Transitions)*
+8. **Bootstrap Integration:** In each HTML file, include the Bootstrap CSS and JS CDN links in the `<head>` and before the closing `<body>` tag respectively. *(Tech Stack: Frontend)*
+9. **Accessibility & SEO:** Ensure semantic HTML tags are used (e.g., `<header>`, `<main>`, `<footer>`) and include meta tags in all HTML files for responsiveness and SEO. *(PRD: Accessibility; App Flow: User Experience)*
+10. **Google Analytics:** Add the Google Analytics tracking snippet in the `<head>` section of `index.html` (and optionally in a common header include) according to Google Analytics setup instructions. *(PRD: Analytics)*
+11. **Validation:** In a browser, load `index.html` and each service page to validate responsiveness and consistent branding. *(PRD: Performance; Q&A: Accessibility)*
+
+## Phase 3: Backend Development
+
+12. **Static Server Setup (Optional):** If a lightweight backend is preferred for static content hosting, create a file named `server.js` in the project root.
+13. **Install Express:** Initialize a Node.js project (if not already done) with `npm init -y` and install Express version appropriate for static serving by running `npm install express`. *(Tech Stack: Backend)
+14. **Express Static Server Configuration:** In `server.js`, add code to serve static files from a `/public` directory. Example code:
+    ```js
+    const express = require('express');
+    const app = express();
+    const port = process.env.PORT || 3000;
+    
+    app.use(express.static('public'));
+    
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
+    ```
+    *(PRD: Static Content Hosting)*
+15. **Migrate Static Files:** Move your existing HTML, CSS, JavaScript, and asset files into a `/public` directory. Update paths if necessary. *(Tech Stack: Frontend)
+16. **Validation:** Run `node server.js` and navigate to `http://localhost:3000` to ensure all pages are served correctly and display as expected. *(Q&A: Pre-Launch Checklist)*
+
+## Phase 4: Integration
+
+17. **Navigation Linking:** Validate that the header navigation links in all HTML files correctly point to their respective service pages (e.g., from `index.html` to `/pages/fuel-supply.html`). *(App Flow: Navigation)
+18. **CSS and JS Integration:** Verify that external stylesheets (`/css/main.css`) and any JavaScript enhancements load properly on every page. *(PRD: Branding; App Flow: Functionality)
+19. **Responsive Testing:** Use browser developer tools to simulate different device sizes and confirm that Bootstrap’s responsive design works as expected on all pages. *(PRD: Responsiveness; Q&A: Accessibility)
+20. **Performance Testing:** Ensure pages load under 3 seconds by using browser performance tools. *(PRD: Performance)*
+
+## Phase 5: Deployment
+
+21. **Git Commit and Repository Setup:** Make sure to commit all changes to your Git repository and push to your preferred platform (GitHub/GitLab). *(Tech Stack: CI/CD)
+22. **Netlify/Vercel Deployment Setup:** Depending on your hosting provider, do the following:
+    - For Netlify: Create a `netlify.toml` file in the project root with basic configuration for a static site. Example:
+      ```toml
+      [build]
+      publish = "public"
+      command = "npm run build"
+      ```
+    - For Vercel: Create a `vercel.json` file with configuration to serve a static site. *(Tech Stack: Infrastructure)
+23. **Set Up HTTPS:** Ensure that the deployment provider is configured with an SSL certificate for HTTPS. *(PRD: Security)
+24. **CI/CD Integration:** Configure GitHub Actions (or your chosen CI/CD pipeline) to build and deploy the site on push. *(Tech Stack: CI/CD Pipelines)
+25. **Final Validation:** Once deployed, run a final round of tests: check the responsiveness, HTTPS status, page load times, and overall performance.
+
+This completes the step-by-step implementation plan for the Africa Link informational website. Follow each phase and validate as necessary to ensure adherence to project requirements and technical specifications.

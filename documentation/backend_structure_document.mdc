@@ -1,0 +1,125 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Backend Structure Document
+
+This document describes the backend setup for the Africa Link website, providing a clear overview of the architecture, hosting, and infrastructure components. Although the website is largely informational and static, the backend is crafted for reliability, performance, and maintainability.
+
+## Backend Architecture
+
+- **Overall Design:**
+  - A lightweight Node.js-based server framework is used as an optional integration to handle basic tasks such as serving static content and routing if needed.
+  - The primary approach is to host static files via platforms like Netlify or Vercel, which automatically manage content delivery and optimizations.
+  - The system is designed to be scalable and maintainable given its simple structure.
+
+- **Key Features Supporting Scalability, Maintainability and Performance:**
+  - **Scalability:** Relying on cloud-based static hosting ensures that the site can easily handle varying loads without significant backend modification.
+  - **Maintainability:** Minimal server-side code lowers complexity; content updates and bug fixes can be managed through version control (Git) integrated with hosting platforms.
+  - **Performance:** Built-in CDN and caching support from hosting providers like Netlify/Vercel ensure fast load times, meeting the performance goals of under 3 seconds per page.
+
+## Database Management
+
+- **Technology Utilized:**
+  - Since the website is informational and static, no traditional database system (SQL or NoSQL) is required.
+  - Content is stored as static files (HTML, CSS, JavaScript) and managed via Git repositories.
+
+- **Data Management Practices:**
+  - All content is version controlled, ensuring traceability and the ability to roll back changes if necessary.
+  - Future dynamic additions (if any) could integrate lightweight data stores, but they are not part of the current project scope.
+
+## Database Schema
+
+- **Schema Overview:**
+  - As there is no dedicated database for this project, no formal schema is implemented.
+  - If at any point a lightweight data store is required for minimal dynamic content, a simple schema could include tables such as:
+    - **Services:** List of maritime and logistics services.
+    - **Contact:** Simple storage for contact form submissions (if activated in the future).
+
+- **Example for an SQL Database (Not Currently Used):**
+  - Services Table:
+    - id: Primary key, auto-increment integer
+    - title: Text
+    - description: Text
+    - imageUrl: Text
+  - Contact Table:
+    - id: Primary key, auto-increment integer
+    - name: Text
+    - email: Text
+    - message: Text
+
+## API Design and Endpoints
+
+- **Design Approach:**
+  - The basic API design follows RESTful principles, even though most of the content is static.
+  - Endpoints can be introduced via the Node.js server if any dynamic data retrieval or microservices become necessary.
+
+- **Key Endpoints (If Implemented):**
+  - **GET /**: Fetches the homepage content, serving static HTML/CSS/JS.
+  - **GET /about**, **GET /services**, **GET /contact**: Each route returns the corresponding informational page.
+  - **GET /assets/{file}**: Serves static assets like images, CSS, and JavaScript files.
+
+## Hosting Solutions
+
+- **Chosen Environment:**
+  - Hosting is done through static content hosting platforms such as Netlify, Vercel, or similar providers.
+
+- **Benefits:**
+  - **Reliability:** These platforms offer robust uptime and auto-scaling capabilities, ensuring the site remains available under varying loads.
+  - **Scalability:** Cloud-based infrastructure automatically adjusts to traffic levels without manual intervention.
+  - **Cost-Effective:** Static content hosting reduces server overhead and maintenance costs.
+
+## Infrastructure Components
+
+- **Content Delivery Network (CDN):**
+  - Integrated with chosen hosting platforms to deliver content quickly across geographical locations.
+
+- **Load Balancers:**
+  - While not necessary for a static site, any integrated Node.js server can be scaled behind simple load balancing mechanisms.
+
+- **Caching Mechanisms:**
+  - Both the hosting platforms and CDNs employ caching to ensure that content is delivered rapidly, reducing server load.
+
+- **Integration of Other Infrastructure Components:**
+  - **SSL Certificates:** Ensuring all communications are secured via HTTPS.
+  - **Minification:** CSS and JavaScript files are minified to reduce load times.
+
+## Security Measures
+
+- **Protocols and Practices Implemented:**
+  - **HTTPS:** All data transmissions are secured using HTTPS, protecting user data in transit.
+  - **Content Delivery:** Use of a CDN ensures that data is delivered securely and efficiently.
+  - **Code Minification:** Reduces the potential for injection attacks by limiting extraneous code exposure.
+  
+- **Authentication & Authorization:**
+  - Not applicable for this static, informational website. If future enhancements require user interactions, standard practices will be implemented.
+
+- **Data Encryption:**
+  - All static assets are served over secure protocols; any future data storage would follow encryption best practices.
+
+## Monitoring and Maintenance
+
+- **Monitoring Tools:**
+  - **Google Analytics:** For tracking traffic, user behavior, and overall website performance.
+  - **Hosting Provider Tools:** Platforms like Netlify/Vercel offer built-in performance monitoring and alerts.
+
+- **Maintenance Strategies:**
+  - **Version Controlled Updates:** Using Git repositories (GitHub/GitLab) to manage and deploy updates.
+  - **Regular Performance Audits:** Periodic reviews of site load times and security compliance.
+  - **Scheduled Reviews:** Regular checks for browser compatibility and branding consistency.
+
+## Conclusion and Overall Backend Summary
+
+- **Recap:**
+  - The backend of the Africa Link website is designed to serve static content efficiently while ensuring high performance, security, and scalability.
+  - A lightweight Node.js server framework is available for minimal backend tasks should they become necessary in the future, though the primary focus is on static content delivery.
+  - The hosting solution is cloud-based, leveraging platforms like Netlify or Vercel that provide integrated CDN, SSL, caching, and continuous deployment, ensuring reliable and fast content delivery.
+
+- **Unique Aspects:**
+  - A minimalistic yet effective approach that meets all the informational and branding needs of Africa Link without unnecessary complexity.
+  - The design optimizes performance with a focus on firm security practices and modern web standards, providing a robust foundation for current needs and future scalability.
+
+This document outlines all backend components and practices that ensure the Africa Link website operates smoothly, remains secure, and offers users a high-quality experience.
