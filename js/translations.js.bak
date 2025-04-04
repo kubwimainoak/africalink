@@ -1,5 +1,5 @@
 /**
- * Africa Link Website - Translation Functionality
+ * AfricaLink Website - Translation Functionality
  * This file handles the language switching functionality and translations
  */
 
@@ -37,8 +37,8 @@ const translations = {
         "learn_more": "Learn More",
         
         // About Section
-        "about_title": "About Africa Link",
-        "about_p1": "Africa Link is a trusted provider of maritime and logistics support services across Africa. With years of experience in the industry, we offer comprehensive solutions tailored to meet the unique needs of our clients.",
+        "about_title": "About AfricaLink",
+        "about_p1": "AfricaLink is a trusted provider of maritime and logistics support services across Africa. With years of experience in the industry, we offer comprehensive solutions tailored to meet the unique needs of our clients.",
         "about_p2": "Our team of experts is dedicated to ensuring that your maritime operations run smoothly, efficiently, and safely, allowing you to focus on your core business activities.",
         
         // Contact Section
@@ -52,13 +52,13 @@ const translations = {
         "footer_tagline": "Your trusted partner for maritime and logistics support services across Africa.",
         "footer_quick_links": "Quick Links",
         "footer_services": "Our Services",
-        "footer_copyright": "© 2025 Africa Link. All rights reserved.",
+        "footer_copyright": "© 2025 AfricaLink. All rights reserved.",
         
         // Fuel Supply Page
         "fuel_service_title": "Fuel Supply Services",
         "fuel_service_subtitle": "Professional bunkering services ensuring your vessels have the fuel they need when they need it",
         "fuel_overview_title": "Our Bunkering Services",
-        "fuel_overview_p1": "At Africa Link, we understand that reliable fuel supply is critical to your maritime operations. Our comprehensive bunkering services ensure that your vessels receive high-quality fuel when and where they need it, minimizing downtime and maximizing operational efficiency.",
+        "fuel_overview_p1": "At AfricaLink, we understand that reliable fuel supply is critical to your maritime operations. Our comprehensive bunkering services ensure that your vessels receive high-quality fuel when and where they need it, minimizing downtime and maximizing operational efficiency.",
         "fuel_overview_p2": "With our extensive network of suppliers and logistics partners across Africa, we can provide bunkering services at key ports and offshore locations, ensuring that your fuel needs are met regardless of your vessel's location.",
         "key_features": "Key Features",
         "quality_fuel": "Quality Fuel Supply",
@@ -88,7 +88,7 @@ const translations = {
         "personnel_title": "Personnel Provision Services",
         "personnel_subtitle": "Access to qualified captains and crew members to ensure your maritime operations run smoothly",
         "personnel_service_title": "Our Personnel Provision Services",
-        "personnel_service_p1": "At Africa Link, we understand that the success of your maritime operations depends on having the right personnel at the helm. Our Personnel Provision services connect you with highly qualified captains, officers, and crew members who bring expertise, experience, and professionalism to your vessels.",
+        "personnel_service_p1": "At AfricaLink, we understand that the success of your maritime operations depends on having the right personnel at the helm. Our Personnel Provision services connect you with highly qualified captains, officers, and crew members who bring expertise, experience, and professionalism to your vessels.",
         "personnel_service_p2": "Whether you need to fill temporary vacancies, assemble a complete crew, or find specialized maritime professionals, our extensive network of vetted maritime personnel ensures you have access to the talent you need, when you need it.",
         "personnel_categories_title": "Maritime Personnel We Provide",
         
@@ -160,7 +160,7 @@ const translations = {
         "recruitment_step5_desc": "Once approved, we handle all logistics to ensure the personnel arrive at your vessel on schedule, including travel arrangements, visas, and any required documentation.",
         
         "quality_assurance_title": "Our Quality Assurance",
-        "quality_assurance_desc": "At Africa Link, we maintain rigorous quality assurance standards for all personnel we provide:",
+        "quality_assurance_desc": "At AfricaLink, we maintain rigorous quality assurance standards for all personnel we provide:",
         "quality_assurance_1": "Thorough vetting of qualifications and experience",
         "quality_assurance_2": "Verification of all certificates and licenses",
         "quality_assurance_3": "Comprehensive background checks",
@@ -175,7 +175,7 @@ const translations = {
         "crew_service_title": "Crew Management Services",
         "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
         "crew_overview_title": "Our Crew Management Services",
-        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p1": "At AfricaLink, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
         "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
         "crew_services_title": "Our Comprehensive Services",
         "crew_visa_title": "Visa Services",
@@ -185,7 +185,7 @@ const translations = {
         "crew_port_title": "Port/Airport Assistance",
         "crew_benefits_title": "Benefits of Our Crew Management Services",
         "crew_benefit_time": "Time Efficiency",
-        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_time_desc": "Outsourcing crew management to AfricaLink saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
         "crew_benefit_cost": "Cost Optimization",
         "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
         "crew_benefit_compliance": "Regulatory Compliance",
@@ -252,7 +252,7 @@ const translations = {
         "shipping_title": "Shipping Support Services",
         "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
         "shipping_services_title": "Our Shipping Support Services",
-        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p1": "AfricaLink provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
         "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
         "shipping_support_title": "Our Support Services",
         
@@ -309,7 +309,7 @@ const translations = {
         "transit_title": "Transit Services",
         "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
         "transit_services_title": "Our Transit Services",
-        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p1": "At AfricaLink, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
         "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
         
         "transit_customs_title": "Customs Clearance Services",
@@ -410,8 +410,8 @@ const translations = {
         "learn_more": "En Savoir Plus",
         
         // About Section
-        "about_title": "À Propos d'Africa Link",
-        "about_p1": "Africa Link est un fournisseur de confiance de services de soutien maritime et logistique à travers l'Afrique. Avec des années d'expérience dans l'industrie, nous offrons des solutions complètes adaptées aux besoins uniques de nos clients.",
+        "about_title": "À Propos d'AfricaLink",
+        "about_p1": "AfricaLink est un fournisseur de confiance de services de soutien maritime et logistique à travers l'Afrique. Avec des années d'expérience dans l'industrie, nous offrons des solutions complètes adaptées aux besoins uniques de nos clients.",
         "about_p2": "Notre équipe d'experts se consacre à assurer que vos opérations maritimes se déroulent de manière fluide, efficace et sécurisée, vous permettant de vous concentrer sur vos activités principales.",
         
         // Contact Section
@@ -425,13 +425,13 @@ const translations = {
         "footer_tagline": "Votre partenaire de confiance pour les services de soutien maritime et logistique à travers l'Afrique.",
         "footer_quick_links": "Liens Rapides",
         "footer_services": "Nos Services",
-        "footer_copyright": "© 2025 Africa Link. Tous droits réservés.",
+        "footer_copyright": "© 2025 AfricaLink. Tous droits réservés.",
         
         // Fuel Supply Page
         "fuel_service_title": "Services d'Approvisionnement en Carburant",
         "fuel_service_subtitle": "Services professionnels de soutage assurant que vos navios tenham o combustível que precisam quando necessário",
         "fuel_overview_title": "Nos Services de Soutage",
-        "fuel_overview_p1": "Chez Africa Link, nous comprenons qu'un approvisionnamento fiável em combustível é essencial para suas operações marítimas. Nos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de parada e maximizando a eficiência operacional.",
+        "fuel_overview_p1": "Chez AfricaLink, nous comprenons qu'un approvisionnamento fiável em combustível é essencial para suas operações marítimas. Nos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de parada e maximizando a eficiência operacional.",
         "fuel_overview_p2": "Com nosso vasto rede de fornecedores e parceiros logísticos através do continente africano, podemos fornecer serviços de abastecimento em portos-chave e locais offshore, garantindo que suas necessidades em combustível sejam atendidas independentemente da localização do seu navio.",
         "key_features": "Caractéristiques Principales",
         "quality_fuel": "Carburant de Qualité",
@@ -461,7 +461,7 @@ const translations = {
         "personnel_title": "Services de Fourniture de Personnel",
         "personnel_subtitle": "Accès à des capitaines et membres d'équipage qualifiés pour assurer le bon déroulement de vos opérations maritimes",
         "personnel_service_title": "Nos Services de Fourniture de Personnel",
-        "personnel_service_p1": "Chez Africa Link, nous comprenons que le succès de vos opérations maritimes dépend de la présence du personnel adéquat à la barre. Nos services de fourniture de personnel vous mettent en relation avec des capitaines, officiers et membres d'équipage hautement qualifiés qui apportent expertise, expérience et professionnalisme à vos navires.",
+        "personnel_service_p1": "Chez AfricaLink, nous comprenons que le succès de vos opérations maritimes dépend de la présence du personnel adéquat à la barre. Nos services de fourniture de personnel vous mettent en relation avec des capitaines, officiers et membres d'équipage hautement qualifiés qui apportent expertise, expérience et professionnalisme à vos navires.",
         "personnel_service_p2": "Whether you need to fill temporary vacancies, assemble a complete crew, or find specialized maritime professionals, our extensive network of vetted maritime personnel ensures you have access to the talent you need, when you need it.",
         "personnel_categories_title": "Maritime Personnel We Provide",
         
@@ -533,7 +533,7 @@ const translations = {
         "recruitment_step5_desc": "Once approved, we handle all logistics to ensure the personnel arrive at your vessel on schedule, including travel arrangements, visas, and any required documentation.",
         
         "quality_assurance_title": "Our Quality Assurance",
-        "quality_assurance_desc": "At Africa Link, we maintain rigorous quality assurance standards for all personnel we provide:",
+        "quality_assurance_desc": "At AfricaLink, we maintain rigorous quality assurance standards for all personnel we provide:",
         "quality_assurance_1": "Thorough vetting of qualifications and experience",
         "quality_assurance_2": "Verification of all certificates and licenses",
         "quality_assurance_3": "Comprehensive background checks",
@@ -548,7 +548,7 @@ const translations = {
         "crew_service_title": "Crew Management Services",
         "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
         "crew_overview_title": "Our Crew Management Services",
-        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p1": "At AfricaLink, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
         "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
         "crew_services_title": "Our Comprehensive Services",
         "crew_visa_title": "Visa Services",
@@ -558,7 +558,7 @@ const translations = {
         "crew_port_title": "Port/Airport Assistance",
         "crew_benefits_title": "Benefits of Our Crew Management Services",
         "crew_benefit_time": "Time Efficiency",
-        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_time_desc": "Outsourcing crew management to AfricaLink saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
         "crew_benefit_cost": "Cost Optimization",
         "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
         "crew_benefit_compliance": "Regulatory Compliance",
@@ -625,7 +625,7 @@ const translations = {
         "shipping_title": "Shipping Support Services",
         "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
         "shipping_services_title": "Our Shipping Support Services",
-        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p1": "AfricaLink provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
         "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
         "shipping_support_title": "Our Support Services",
         
@@ -682,7 +682,7 @@ const translations = {
         "transit_title": "Transit Services",
         "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
         "transit_services_title": "Our Transit Services",
-        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p1": "At AfricaLink, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
         "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
         
         "transit_customs_title": "Customs Clearance Services",
@@ -783,8 +783,8 @@ const translations = {
         "learn_more": "Saiba Mais",
         
         // About Section
-        "about_title": "Sobre a Africa Link",
-        "about_p1": "Africa Link é um provedor confiável de serviços de suporte marítimo e logístico em toda a África. Com anos de experiência no setor, oferecemos soluções abrangentes adaptadas para atender às necessidades únicas de nossos clientes.",
+        "about_title": "Sobre a AfricaLink",
+        "about_p1": "AfricaLink é um provedor confiável de serviços de suporte marítimo e logístico em toda a África. Com anos de experiência no setor, oferecemos soluções abrangentes adaptadas para atender às necessidades únicas de nossos clientes.",
         "about_p2": "Nossa equipe de especialistas é dedicada a garantir que suas operações marítimas funcionem de maneira suave, eficiente e segura, permitindo que você se concentre em suas atividades comerciais principais.",
         
         // Contact Section
@@ -798,13 +798,13 @@ const translations = {
         "footer_tagline": "Seu parceiro confiável para serviços de suporte marítimo e logístico em toda a África.",
         "footer_quick_links": "Links Rápidos",
         "footer_services": "Nossos Serviços",
-        "footer_copyright": "© 2025 Africa Link. Todos os direitos reservados.",
+        "footer_copyright": "© 2025 AfricaLink. Todos os direitos reservados.",
         
         // Fuel Supply Page - complete translations
         "fuel_service_title": "Serviços de Fornecimento de Combustível",
         "fuel_service_subtitle": "Serviços profissionais de abastecimento garantindo que seus navios tenham o combustível que precisam quando necessário",
         "fuel_overview_title": "Nossos Serviços de Abastecimento",
-        "fuel_overview_p1": "Na Africa Link, entendemos que um fornecimento confiável de combustível é essencial para suas operações marítimas. Nossos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de inatividade e maximizando a eficiência operacional.",
+        "fuel_overview_p1": "Na AfricaLink, entendemos que um fornecimento confiável de combustível é essencial para suas operações marítimas. Nossos serviços completos de abastecimento garantem que seus navios recebam combustível de alta qualidade quando e onde precisarem, minimizando o tempo de inatividade e maximizando a eficiência operacional.",
         "fuel_overview_p2": "Com nossa vasta rede de fornecedores e parceiros logísticos em todo o continente africano, podemos fornecer serviços de abastecimento em portos-chave e locais offshore, garantindo que suas necessidades de combustível sejam atendidas independentemente da localização do seu navio.",
         "key_features": "Principais Características",
         "quality_fuel": "Combustível de Qualidade",
@@ -834,7 +834,7 @@ const translations = {
         "personnel_title": "Serviços de Provisão de Pessoal",
         "personnel_subtitle": "Acesso a capitães e membros de tripulação qualificados para garantir que suas operações marítimas funcionem sem problemas",
         "personnel_service_title": "Nossos Serviços de Provisão de Pessoal",
-        "personnel_service_p1": "Na Africa Link, entendemos que o sucesso de suas operações marítimas depende de ter o pessoal certo no comando. Nossos Serviços de Provisão de Pessoal conectam você a capitães, oficiais e membros de tripulação altamente qualificados que trazem expertise, experiência e profissionalismo para seus navios.",
+        "personnel_service_p1": "Na AfricaLink, entendemos que o sucesso de suas operações marítimas depende de ter o pessoal certo no comando. Nossos Serviços de Provisão de Pessoal conectam você a capitães, oficiais e membros de tripulação altamente qualificados que trazem expertise, experiência e profissionalismo para seus navios.",
         "personnel_service_p2": "Seja para preencher vagas temporárias, montar uma tripulação completa ou encontrar profissionais marítimos especializados, nossa extensa rede de pessoal marítimo verificado garante que você tenha acesso ao talento necessário, quando precisar.",
         "personnel_categories_title": "Pessoal Marítimo que Fornecemos",
         
@@ -906,7 +906,7 @@ const translations = {
         "recruitment_step5_desc": "Uma vez aprovado, cuidamos de toda a logística para garantir que o pessoal chegue ao seu navio no prazo, incluindo arranjos de viagem, vistos e qualquer documentação necessária.",
         
         "quality_assurance_title": "Nossa Garantia de Qualidade",
-        "quality_assurance_desc": "Na Africa Link, mantemos rigorosos padrões de garantia de qualidade para todo o pessoal que fornecemos:",
+        "quality_assurance_desc": "Na AfricaLink, mantemos rigorosos padrões de garantia de qualidade para todo o pessoal que fornecemos:",
         "quality_assurance_1": "Verificação minuciosa de qualificações e experiência",
         "quality_assurance_2": "Verificação de todos os certificados e licenças",
         "quality_assurance_3": "Verificações abrangentes de antecedentes",
@@ -921,7 +921,7 @@ const translations = {
         "crew_service_title": "Crew Management Services",
         "crew_service_subtitle": "Comprehensive crew management including visas, transportation, accommodations, flights, and port/airport assistance",
         "crew_overview_title": "Our Crew Management Services",
-        "crew_overview_p1": "At Africa Link, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
+        "crew_overview_p1": "At AfricaLink, we understand that efficient and effective crew management is essential to successful maritime operations. Our comprehensive crew management services are designed to handle all aspects of crew logistics, ensuring your personnel are well-cared for and can focus on their core responsibilities.",
         "crew_overview_p2": "From visa processing and transportation to accommodations and port assistance, our dedicated team provides end-to-end crew management solutions tailored to your specific needs, allowing you to focus on your core operations.",
         "crew_services_title": "Our Comprehensive Services",
         "crew_visa_title": "Visa Services",
@@ -931,7 +931,7 @@ const translations = {
         "crew_port_title": "Port/Airport Assistance",
         "crew_benefits_title": "Benefits of Our Crew Management Services",
         "crew_benefit_time": "Time Efficiency",
-        "crew_benefit_time_desc": "Outsourcing crew management to Africa Link saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
+        "crew_benefit_time_desc": "Outsourcing crew management to AfricaLink saves valuable time for your operational team, allowing them to focus on core business activities while we handle the logistics.",
         "crew_benefit_cost": "Cost Optimization",
         "crew_benefit_cost_desc": "Our established network and volume-based relationships with service providers allow us to secure preferential rates, helping reduce your overall crew management costs.",
         "crew_benefit_compliance": "Regulatory Compliance",
@@ -998,7 +998,7 @@ const translations = {
         "shipping_title": "Shipping Support Services",
         "shipping_subtitle": "Comprehensive port services, tugboats, floating accommodations, and marine inspection tools",
         "shipping_services_title": "Our Shipping Support Services",
-        "shipping_overview_p1": "Africa Link provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
+        "shipping_overview_p1": "AfricaLink provides a full range of shipping support services designed to enhance your maritime operations across Africa. From essential port services to specialized marine inspection tools, we offer comprehensive solutions to meet the unique challenges of operating in African waters.",
         "shipping_overview_p2": "Our team of experienced maritime professionals ensures that every aspect of your shipping needs is addressed efficiently and professionally, allowing your operations to run smoothly and safely.",
         "shipping_support_title": "Our Support Services",
         
@@ -1055,7 +1055,7 @@ const translations = {
         "transit_title": "Transit Services",
         "transit_subtitle": "Streamlining customs clearance and transit logistics across Africa",
         "transit_services_title": "Our Transit Services",
-        "transit_overview_p1": "At Africa Link, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
+        "transit_overview_p1": "At AfricaLink, we understand that navigating the complexities of customs clearance and transit logistics in Africa can be challenging. Our dedicated transit services team provides expert guidance and comprehensive solutions to ensure your cargo moves smoothly across borders and to its final destination.",
         "transit_overview_p2": "With extensive knowledge of regional customs regulations and strong relationships with local authorities, we help eliminate delays, reduce costs, and ensure compliance throughout the transit process.",
         
         "transit_customs_title": "Customs Clearance Services",
