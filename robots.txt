@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Sitemap: https://africa-link.com/sitemap.xml
+
+# Disallow irrelevant files and directories
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /node_modules/
+Disallow: /*.log
+Disallow: /*.md 
