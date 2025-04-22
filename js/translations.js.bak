@@ -52,7 +52,7 @@ const translations = {
         "footer_tagline": "Your trusted partner for maritime and logistics support services across Africa.",
         "footer_quick_links": "Quick Links",
         "footer_services": "Our Services",
-        "footer_copyright": "© 2025 AfricaLink. All rights reserved.",
+        "footer_copyright": "© 2019 AfricaLink. All rights reserved.",
         
         // Fuel Supply Page
         "fuel_service_title": "Fuel Supply Services",
@@ -425,7 +425,7 @@ const translations = {
         "footer_tagline": "Votre partenaire de confiance pour les services de soutien maritime et logistique à travers l'Afrique.",
         "footer_quick_links": "Liens Rapides",
         "footer_services": "Nos Services",
-        "footer_copyright": "© 2025 AfricaLink. Tous droits réservés.",
+        "footer_copyright": "© 2019 AfricaLink. Tous droits réservés.",
         
         // Fuel Supply Page
         "fuel_service_title": "Services d'Approvisionnement en Carburant",
@@ -798,7 +798,7 @@ const translations = {
         "footer_tagline": "Seu parceiro confiável para serviços de suporte marítimo e logístico em toda a África.",
         "footer_quick_links": "Links Rápidos",
         "footer_services": "Nossos Serviços",
-        "footer_copyright": "© 2025 AfricaLink. Todos os direitos reservados.",
+        "footer_copyright": "© 2019 AfricaLink. Todos os direitos reservados.",
         
         // Fuel Supply Page - complete translations
         "fuel_service_title": "Serviços de Fornecimento de Combustível",
@@ -1171,7 +1171,7 @@ const translations = {
         "footer_tagline": "شريكك الموثوق لخدمات الدعم البحري واللوجستي في جميع أنحاء أفريقيا.",
         "footer_quick_links": "روابط سريعة",
         "footer_services": "خدماتنا",
-        "footer_copyright": "© 2025 أفريكا لينك. جميع الحقوق محفوظة.",
+        "footer_copyright": "© 2019 أفريكا لينك. جميع الحقوق محفوظة.",
         
         // Fuel Supply Page - complete translations
         "fuel_service_title": "خدمات توريد الوقود",
